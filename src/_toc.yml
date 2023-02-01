@@ -4,21 +4,30 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
+    - caption: How To - Progress Through an LX
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
-    - caption: PART_TWO
+          - file: consume/1_setup/index
+          - file: consume/2_instructions/index
+          - file: consume/3_next/index
+    - caption: How To - Create an LX
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_2/chapter_b/index
+          - file: create/1_overview/index
+          - file: create/2_features/index
+          - file: create/3_structure/index
+          - file: create/4_create/index
+          - file: create/5_develop/index
             sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
+                - file: create/5_develop/1_notebooks
+                - file: create/5_develop/2_editor
+                - file: create/5_develop/3_vnc
+                - file: create/5_develop/4_challenges
+                - file: create/5_develop/5_simulator
+                - file: create/5_develop/6_duckiebot
+          - file: create/6_publish/index
             sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+              - file: create/6_publish/1_test
+              - file: create/6_publish/2_publish
