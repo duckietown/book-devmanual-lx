@@ -4,6 +4,13 @@
 format: jb-book
 root: intro
 parts:
+    - caption: What is an LX?
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: create/1_overview/index
+          - file: create/2_features/index
+          - file: create/3_structure/index
     - caption: How To - Progress Through an LX
       maxdepth: 2
       numbered: False
@@ -15,9 +22,6 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: create/1_overview/index
-          - file: create/2_features/index
-          - file: create/3_structure/index
           - file: create/4_create/index
           - file: create/5_develop/index
             sections:
