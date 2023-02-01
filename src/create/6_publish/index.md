@@ -1,3 +1,3 @@
-# Publish Your LX
+# Step 3: Publish Your LX
 
 Goal: Define testing best practices and where to publish LX materials
