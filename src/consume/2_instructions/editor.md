@@ -14,7 +14,9 @@ dts code editor
 ```
 
 Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
-of your browser to access the VSCode powered code editor. The first thing you will see is
+of your browser to access the VSCode powered code editor. 
+
+The first thing you will see is
 the README document for the LX, which should contain an overview of all the commands we will cover in this book as a 
 helpful reference.
 

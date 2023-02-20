@@ -2,9 +2,10 @@
 
 ### What does it do?
 
-The `dts code build` command builds the learning experience package into a software image that will be used by all of 
-the other 
-commands in the workflow.  The first step to working 
+The `dts code build` command builds the learning experience package into a software image that will be used by each of 
+the other commands in the workflow.  
+
+The first step to working 
 through any LX is to build it and confirm that you have no initial errors.
 
 ```{hint}

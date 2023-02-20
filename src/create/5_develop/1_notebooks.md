@@ -21,4 +21,24 @@ the separate solutions repository to enable evaluation.
 
 ### Edit zones
 
+The following table contains a list of the files and directories that you may need to update to implement this type 
+of LX activity. If you would like a full walkthrough showing how to implement notebooks, skip to the next section.
+
+```{list-table} Edit zones
+:header-rows: 1
+:name: notebook-table
+
+* - Feature
+  - File Location
+  - Purpose
+* - Jupyter Notebook
+  - `lx/notebooks`
+  - Notebook files contain the knowledge portion of an LX, walking students through activities, visualizations, and 
+  development.
+* - Agent Code
+  - `lx/packages`
+  - Python files for agent implementations should remain in the `packages` directory, with students filling in TODOs 
+  as instructed by the notebooks.
+```
+
 ### Tutorial

@@ -5,8 +5,9 @@
 The `dts code evaluate` command runs your code to implement a robot agent at the end of each LX and evaluates it 
 against some set of performance metrics for the Duckiebot. This might be distance travelled in an obstacle avoidance 
 challenge, intersections successful and lawfully handled in the Duckietown city, or any other hurdle that the LX 
-creator may have defined for you.  Details of the evaluation metrics will be outlined in the LX `README` file.
+creator may have defined for you.  
 
+Details of the evaluation metrics will be outlined in the LX `README` file.
 
 ### How do I run it?
 
