@@ -8,9 +8,9 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: create/1_overview/index
-          - file: create/2_features/index
-          - file: create/3_structure/index
+          - file: intro/1_overview/index
+          - file: intro/2_features/index
+
     - caption: How To - Progress Through an LX
       maxdepth: 2
       numbered: False
@@ -18,11 +18,11 @@ parts:
           - file: consume/1_setup/index
           - file: consume/2_instructions/index
             sections:
-              - file: consume/2_instructions/build
-              - file: consume/2_instructions/editor
-              - file: consume/2_instructions/workbench
-              - file: consume/2_instructions/evaluate
-              - file: consume/2_instructions/submit
+              - file: consume/2_instructions/1_build
+              - file: consume/2_instructions/2_editor
+              - file: consume/2_instructions/3_workbench
+              - file: consume/2_instructions/4_evaluate
+              - file: consume/2_instructions/5_submit
 
           - file: consume/3_next/index
 
@@ -30,17 +30,30 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: create/4_create/index
-          - file: create/5_develop/index
+          - file: create/1_structure/index
+          - file: create/2_create/index
+          - file: create/3_develop/index
             sections:
-                - file: create/5_develop/1_notebooks
-                - file: create/5_develop/2_editor
-                - file: create/5_develop/3_vnc
-                - file: create/5_develop/4_challenges
-                - file: create/5_develop/5_simulator
-                - file: create/5_develop/6_duckiebot
+                - file: create/3_develop/1_notebooks
+                - file: create/3_develop/2_editor
+                - file: create/3_develop/3_vnc
+                - file: create/3_develop/4_challenges
+                - file: create/3_develop/5_simulator
+                - file: create/3_develop/6_duckiebot
+          - file: create/5_publish/index
+            sections:
+              - file: create/4_publish/1_test
+              - file: create/4_publish/2_publish
 
-          - file: create/6_publish/index
-            sections:
-              - file: create/6_publish/1_test
-              - file: create/6_publish/2_publish
+    - caption: Behind the Scenes
+      maxdepth: 2
+      numbered: False
+      chapters:
+        - file: background/1_assembly/index
+        - file: background/2_workflow/index
+          sections:
+            - file: background/2_workflow/1_build
+            - file: background/2_workflow/2_editor
+            - file: background/2_workflow/3_workbench
+            - file: background/2_workflow/4_evaluate
+            - file: background/2_workflow/5_submit

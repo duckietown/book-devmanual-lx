@@ -1,4 +1,4 @@
-# Step 3: Publish Your LX
+# Step 4: Publish Your LX
 
 ```{tableofcontents}
 ```

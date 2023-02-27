@@ -1,4 +1,4 @@
-# LX Structure
+# Step 1: Review the LX Structure
 
 A learning experience is structured in three parts.  These three directories are packaged into a single working 
 directory when the `dts lx create` command is used to generale a new, blank LX for development and then split into 

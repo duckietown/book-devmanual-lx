@@ -71,11 +71,7 @@ reference the **How to get help** section of the [What's Next?](../3_next/index)
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
-### Behind the scenes ...
-
-**TODO: This info may go here or in an LX**
-
-### Expert Mode Options
+### Extra Options
 
 ```{warning}
 If this is your first time using the `dts code workflow`, don't worry about the following section just yet. Continue 
@@ -84,6 +80,10 @@ on to the next page to open you first LX activity.
 
 Once you are comfortable with the `dts code` workflow, you may want to use some of the additional control provided 
 over each command.  This section documents each of the flags available to extend the `dts code build` command.
+
+You can also explore the **Behind the Scenes** chapter for more details on what is happening in the background when you run the `dts code build` command.
+
+**Command options:**
 
 ```
 usage: dts [-h] [-C WORKDIR] [-H MACHINE] [-u USERNAME] [--no-pull] [--no-cache] [--push] [--recipe RECIPE] [--registry REGISTRY] [-L LAUNCHER] [-b BASE_TAG] [-v] [--quiet]

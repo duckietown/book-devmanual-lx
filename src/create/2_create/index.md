@@ -1,4 +1,4 @@
-# Step 1: Create a New LX
+# Step 2: Create a New LX
 
 New learning experiences are developed within `lx-development` projects.  This project structure provides a working 
 directory containing all three of the required directories - `lx`, `recipe`, and `solution` - for your LX in one place.

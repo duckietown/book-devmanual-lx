@@ -1,4 +1,4 @@
-# Step 2: Develop Your Activities
+# Step 3: Develop Your Activities
 
 ```{tableofcontents}
 ```
