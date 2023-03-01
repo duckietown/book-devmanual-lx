@@ -40,7 +40,7 @@ parts:
                 - file: create/3_develop/4_challenges
                 - file: create/3_develop/5_simulator
                 - file: create/3_develop/6_duckiebot
-          - file: create/5_publish/index
+          - file: create/4_publish/index
             sections:
               - file: create/4_publish/1_test
               - file: create/4_publish/2_publish
