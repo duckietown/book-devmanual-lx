@@ -24,9 +24,11 @@ the world.
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
 reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
 
+### Troubleshooting
+
 ```{trouble}
 
-`dts :  The path '/home/kathryn-duckietown/duckietown/daffy-stage/docs' does not appear to be a Duckietown project. 
+`dts :  The path '/home/myuser/not_an_lx_directory' does not appear to be a Duckietown project. 
      :  The metadata file '.dtproject' is missing.`
 
 ---

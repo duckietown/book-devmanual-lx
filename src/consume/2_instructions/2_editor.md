@@ -16,15 +16,13 @@ dts code editor
 Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
 of your browser to access the VSCode powered code editor. 
 
-The first thing you will see is
-the README document for the LX, which should contain an overview of all the commands we will cover in this book as a 
-helpful reference.
-
 ```{figure} ../../_images/consume/editor-url.png
 :name: editor-url
 
 Url to access your VSCode editor in the browser.
 ```
+
+The first thing you will see is the README document, which should contain the learning objectives for the LX.
 
 ```{figure} ../../_images/consume/code-editor.png
 :name: code-editor
@@ -32,8 +30,12 @@ Url to access your VSCode editor in the browser.
 The VSCode LX editor.
 ```
 
-Now follow the instructions in each of the activities in the `notebooks` directory in sequence to complete the 
-learning experience.
+The activities in the `notebooks` directory contain the main guidance and content of a learning experience. Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
+
+* 01-Notebook-Activities
+* 02-Code-Activities
+
+Then return to this page and continue on to the `dts workbench` command.
 
 ```{hint}
 
@@ -41,21 +43,27 @@ Strengthen your test-driven development (TDD) habits by using the Testing interf
 provided unit tests for each function you complete in an LX. This will confirm that your solution performs as 
 expected before you run it in simulation or on your Duckiebot. Note that the beaker symbol to open the Testing interface may not appear in the sidebar until after you've opened 
 one of the Python files in the `packages` directory.
-```{image} ../../_images/consume/unit-tests.png
+```{image} ../../_images/consume/test-interface.png
 ```
 %```
+
+### Troubleshooting
 
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
 reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
 
 ```{trouble}
 
-`dts :  The path '/home/kathryn-duckietown/duckietown/daffy-stage/docs' does not appear to be a Duckietown project. 
+`dts :  The path '/home/myuser/not_an_lx_directory' does not appear to be a Duckietown project. 
      :  The metadata file '.dtproject' is missing.`
 
 ---
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
+
+### What's Next?
+
+Once you've completed the first two notebooks in the **hello-world** learning experience, continue on to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
 
 ### Extra Options
 

@@ -32,14 +32,18 @@ Always make sure that your system is up to date before starting a new learning e
 
 ### How do I run it?
 
-First, navigate into the directory containing the learning experience you would like to progress through. 
-For example, if you have the following collection of learning experiences and would like to work through the 
-`object-detection` LX, all `dts code` commands should be executed inside of the`object-detection` directory.
+First, navigate into the directory containing the **hello-world** learning experience (or the root directory of the LX you are working on completing).
+
+**`duckietown-lx/hello-world-lx`**
 
 ```{figure} ../../_images/consume/lx-directory.png
 :name: lx-directory
 
-List of LX directories with the object-detection directory highlighted.
+List of LX directories with the hello-world-lx directory highlighted.
+```
+
+```{important}
+All `dts code` commands should be executed inside the root directory of the learning experience.
 ```
 
 Then run
@@ -59,17 +63,23 @@ mode using the `--debug` flag.
 
     dts --debug code build
 
+### Troubleshooting
+
 If you run into any issues while building the image, you can search the troubleshooting symptoms below or 
 reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
 
 ```{trouble}
 
-`dts :  The path '/home/kathryn-duckietown/duckietown/daffy-stage/docs' does not appear to be a Duckietown project. 
+`dts :  The path '/home/myuser/not_an_lx_directory' does not appear to be a Duckietown project. 
      :  The metadata file '.dtproject' is missing.`
 
 ---
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
+
+### What's Next?
+
+Now that you've built the **hello-world** learning experience, continue on to the next page to open the editor and complete your first notebook activities.
 
 ### Extra Options
 
