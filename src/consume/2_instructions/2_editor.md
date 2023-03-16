@@ -1,11 +1,11 @@
 # `dts code editor`
 
-### What does it do?
+## What does it do?
 
 The `dts code editor` command provides a local code editor that you will use to work through learning 
 experience notebooks and develop agents to run on your Duckiebot - right in your browser.
 
-### How do I run it?
+## How do I run it?
 
 Open the code editor by running the following command
 
@@ -14,7 +14,12 @@ dts code editor
 ```
 
 Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
-of your browser to access the VSCode powered code editor. 
+of your browser to access the `VSCode` powered code editor. 
+
+```{note}
+If your Operating System supports it, the page should be opened automatically for you in a new browser
+tab as soon as it is ready to be opened.
+```
 
 ```{figure} ../../_images/consume/editor-url.png
 :name: editor-url
@@ -30,6 +35,10 @@ The first thing you will see is the README document, which should contain the le
 The VSCode LX editor.
 ```
 
+```{todo}
+Let's remake this image and remove all that blank space at the bottom
+```
+
 The activities in the `notebooks` directory contain the main guidance and content of a learning experience. Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
 
 * 01-Notebook-Activities
@@ -39,18 +48,21 @@ Then return to this page and continue on to the `dts workbench` command.
 
 ```{hint}
 
-Strengthen your test-driven development (TDD) habits by using the Testing interface in the VSCode editor to run the 
-provided unit tests for each function you complete in an LX. This will confirm that your solution performs as 
-expected before you run it in simulation or on your Duckiebot. Note that the beaker symbol to open the Testing interface may not appear in the sidebar until after you've opened 
-one of the Python files in the `packages` directory.
-```{image} ../../_images/consume/test-interface.png
-```
-%```
+Strengthen your test-driven development (TDD) habits by using the Testing interface in the `VSCode` 
+editor to run the provided unit tests for each function you complete in an LX. 
+This will confirm that your solution performs as expected before you run it in simulation or 
+on your Duckiebot. Note that the beaker symbol to open the Testing interface may not appear in the sidebar 
+until after you've opened one of the Python files in the `packages` directory.
 
-### Troubleshooting
+```{figure} ../../_images/consume/test-interface.png
+:align: center
+```
+
+
+## Troubleshooting
 
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
-reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
+reference the [](how-to-get-help) section of this manual.
 
 ```{trouble}
 
@@ -61,23 +73,24 @@ reference the **How to get help** section of the [What's Next?](../3_next/index)
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
-### What's Next?
+## What's Next?
 
 Once you've completed the first two notebooks in the **hello-world** learning experience, continue on to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
 
-### Extra Options
+## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code workflow`, don't worry about the following section just yet. Continue 
-on to the next page to run your first LX activity.
+If this is your first time using the `dts code` workflow, don't worry about the following section just yet. 
+Continue on to the next page to run your first LX activity.
 ```
 
-Once you are comfortable with the `dts code` workflow, you may want to use some of the additional control provided 
-over each command.  This section documents each of the flags available to extend the `dts code editor` command.
+Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
+over each command. This section documents each of the flags available to extend the `dts code editor` command.
 
-You can also explore the **Behind the Scenes** chapter for more details on what is happening in the background when you run the `dts code editor` command.
+You can also explore the [Behind the Scenes - dts code editor](behind-the-scenes-code-editor) chapter 
+for more details on what happens in the background when you run the `dts code editor` command.
 
-**Command options:**
+### Command options
 
 ```
 usage: dts [-h] [-C WORKDIR] [-u USERNAME] [--distro DISTRO] [--bind BIND] [--no-build] [--build-only] [--recipe RECIPE] [--image IMAGE] [--plain] [--no-pull] [--keep] [--impersonate IMPERSONATE] [-v]

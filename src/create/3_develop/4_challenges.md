@@ -1,10 +1,13 @@
 # Evaluated Challenges
 
-### Educational purpose
+## Educational purpose
+
+```{todo}
+Empty section here
+```
 
 
-### Edit zones
-
+## Edit zones
 
 The following table contains a list of the files and directories that you may need to update to implement this type 
 of LX activity. If you would like a full walkthrough showing how to implement challenges, skip to the next section.
@@ -21,5 +24,13 @@ of LX activity. If you would like a full walkthrough showing how to implement ch
   - fill
 ```
 
+```{todo}
+Complete the table and remove the `fill` placeholders.
+```
 
-### Tutorial
+
+## Tutorial
+
+```{todo}
+Empty section here
+```

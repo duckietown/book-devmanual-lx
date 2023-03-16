@@ -1,9 +1,10 @@
 # `dts code submit`
 
-### What does it do?
+## What does it do?
 
 The `dts code submit` command is very similar to the `dts code evaluate` command, but instead of evaluating your 
-agent's performance on your local machine, it sends it to the [Duckietown challenges server](https://challenges.duckietown.org).
+agent's performance on your local machine, it uploads your agent to the 
+[Duckietown Challenges Server](https://challenges.duckietown.org) for evaluation on the cloud.
 
 ```{figure} ../../_images/consume/challenges-server.png
 :name: challenges-server
@@ -11,20 +12,20 @@ agent's performance on your local machine, it sends it to the [Duckietown challe
 The Duckietown challenges server displaying results for submission simulations.
 ```
 
-### How do I run it?
+## How do I run it?
 
 When you are ready to submit your solution to the challenge for your LX, use the following command,
 
     dts code submit
 
-This will package all of your code and send it to the Duckietown servers for evaluation. The command will output a 
-URL that you can use to follow your submission and compare your agent with other developers' solutions from around 
-the world.
+This will package all of your code and send it to the Duckietown Challenges Server for evaluation. 
+The command will output a URL that you can use to follow your submission and compare your agent with other 
+developers' solutions from all over the world.
 
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
-reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
+reference the [](how-to-get-help) section of this manual.
 
-### Troubleshooting
+## Troubleshooting
 
 ```{trouble}
 
@@ -35,19 +36,21 @@ reference the **How to get help** section of the [What's Next?](../3_next/index)
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
-### Extra Options
+## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code workflow`, don't worry about the following section just yet. You now 
-have all the tools to complete your first learning experience - go for it!
+If this is your first time using the `dts code` workflow, don't worry about the following section just yet. 
+You now have all the tools to complete your first learning experience - go for it!
 ```
 
-Once you are comfortable with the `dts code` workflow, you may want to use some of the additional control provided 
-over each command.  This section documents each of the flags available to extend the `dts code evaluate` command.
+Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
+over each command. This section documents each of the flags available to extend the `dts code evaluate` command.
 
-You can also explore the **Behind the Scenes** chapter for more details on what is happening in the background when you run the `dts code submit` command.
+You can also explore the [Behind the Scenes - dts code submit](behind-the-scenes-code-submit) chapter
+for more details on what happens in the background when you run the `dts code submit` command.
 
-**Command options:**
+
+### Command options
 
 ```
 usage: dts [-h] [-C WORKDIR] [-H MACHINE] [-a ARCH] [-u USERNAME] [--recipe RECIPE] [--no-pull] [--no-cache] [--impersonate IMPERSONATE]

@@ -1,6 +1,6 @@
 # Notebook Activities
 
-### Educational purpose
+## Educational purpose
 
 ```{admonition} Notebooks vs packages:
 As a general rule, example code and visualizations should be developed by students 
@@ -19,7 +19,7 @@ package files to implement their work as directed by the notebook instructions, 
 the separate solutions repository to enable evaluation.
 ```
 
-### Edit zones
+## Edit zones
 
 The following table contains a list of the files and directories that you may need to update to implement this type 
 of LX activity. If you would like a full walkthrough showing how to implement notebooks, skip to the next section.
@@ -41,4 +41,8 @@ of LX activity. If you would like a full walkthrough showing how to implement no
   as instructed by the notebooks.
 ```
 
-### Tutorial
+## Tutorial
+
+```{todo}
+Empty section here
+```

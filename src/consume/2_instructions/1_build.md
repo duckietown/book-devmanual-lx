@@ -1,36 +1,37 @@
 # `dts code build`
 
-### What does it do?
+## What does it do?
 
-The `dts code build` command builds the learning experience package into a software image that will be used by each of 
-the other commands in the workflow.  
+The `dts code build` command builds the learning experience package into a Docker image that will be 
+used by each of the other commands in the workflow.
 
-The first step to working 
-through any LX is to build it and confirm that you have no initial errors.
+The first step to working through any learning experience is to build it.
 
 ```{hint}
-Strengthen your iterative development habits by beginning every work session with a fresh build of your LX. This 
-will help ensure that you don't continue development on top of any previous errors.
+Strengthen your iterative development habits by beginning every work session with a fresh build of your LX. 
+This will help ensure that you don't continue development on top of any previous errors.
 ```
 
-### Prerequisites
+## Prerequisites
 
-Always make sure that your system is up to date before starting a new learning experience. If you haven't yet installed the 
-  Duckietown shell and configured your development environment, return to the [Environment Setup page](../1_setup/index) before continuing.
+Always make sure that your system is up-to-date before starting a new learning experience. 
+If you haven't yet installed the Duckietown shell and configured your development environment, 
+return to the [](env-setup) before continuing.
 
-- 💻 Update the shell commands:
+- Update the shell commands:
 
       dts update
 
-- 💻 Update your laptop/desktop: 
+- Update your laptop/desktop: 
 
       dts desktop update
 
-- 🚙 Update your Duckiebot: 
+- Update your Duckiebot: 
 
-      dts duckiebot update <your_robot_name>
+      dts duckiebot update [ROBOT_NAME]
 
-### How do I run it?
+
+## How do I run it?
 
 First, navigate into the directory containing the **hello-world** learning experience (or the root directory of the LX you are working on completing).
 
@@ -50,7 +51,7 @@ Then run
 
     dts code build
 
-You will see the following message once your LX has built successfully
+You will see the following message once your LX has built successfully,
 
 ```{figure} ../../_images/consume/build-success.png
 :name: build-success
@@ -63,10 +64,10 @@ mode using the `--debug` flag.
 
     dts --debug code build
 
-### Troubleshooting
+## Troubleshooting
 
 If you run into any issues while building the image, you can search the troubleshooting symptoms below or 
-reference the **How to get help** section of the [What's Next?](../3_next/index) page in this development manual.
+reference the [](how-to-get-help) section of this manual.
 
 ```{trouble}
 
@@ -77,25 +78,27 @@ reference the **How to get help** section of the [What's Next?](../3_next/index)
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
-### What's Next?
+## What's Next?
 
-Now that you've built the **hello-world** learning experience, continue on to the next page to open the editor and complete your first notebook activities.
+Now that you've built the **hello-world** learning experience, continue on to the next page to 
+open the editor and complete your first notebook activities.
 
-### Extra Options
+## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code workflow`, don't worry about the following section just yet. Continue 
-on to the next page to open you first LX activity.
+If this is your first time using the `dts code` workflow, don't worry about the following section just yet. 
+Continue on to the next page to open you first LX activity.
 ```
 
-Once you are comfortable with the `dts code` workflow, you may want to use some of the additional control provided 
-over each command.  This section documents each of the flags available to extend the `dts code build` command.
+Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
+over each command. This section documents each of the flags available to extend the `dts code build` command.
 
-You can also explore the **Behind the Scenes** chapter for more details on what is happening in the background when you run the `dts code build` command.
+You can also explore the [Behind the Scenes - dts code build](behind-the-scenes-code-build) chapter 
+for more details on what happens in the background when you run the `dts code build` command.
 
-**Command options:**
+### Command options
 
-```
+```bash
 usage: dts [-h] [-C WORKDIR] [-H MACHINE] [-u USERNAME] [--no-pull] [--no-cache] [--push] [--recipe RECIPE] [--registry REGISTRY] [-L LAUNCHER] [-b BASE_TAG] [-v] [--quiet]
 
 optional arguments:

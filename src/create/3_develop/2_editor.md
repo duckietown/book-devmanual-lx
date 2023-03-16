@@ -1,6 +1,6 @@
 # Editor Features
 
-### Educational purpose
+## Educational purpose
 
 ```{figure} ../../_images/consume/code-editor.png
 :name: editor
@@ -8,13 +8,24 @@
 The VSCode LX editor.
 ```
 
-```{image} ../../_images/consume/unit-tests.png
+```{todo}
+Let's remake this image and remove all that blank space at the bottom
+```
+
+```{image} ../../_images/consume/test-interface.png
 ```
 
 
-### Edit zones
+## Edit zones
 
-**TODO: How to customize available tools and plugins**
+```{todo}
+How to customize available tools and plugins
+```
 
 
-### Tutorial
+
+## Tutorial
+
+```{todo}
+Empty section here
+```

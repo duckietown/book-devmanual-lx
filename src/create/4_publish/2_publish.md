@@ -1,12 +1,13 @@
 # Publishing Your LX
 
-`lx-development` project directories can be published to their respective repositories using the `dts code publish` 
-tool.  
+The three directories making up an LX can be published to their respective repositories 
+using the `dts code publish` command.  
 
-This provides a streamlined interface for managing repositories and branches so that your LX directories will never be 
-out of sync with each other across the development project.
+This provides a streamlined interface for managing repositories and branches so that your LX directories 
+will never be out of sync with each other across the development project.
 
-### What do I need to know ahead of time?
+
+## What do I need to know ahead of time?
 
 Some information will be required to publish your LX:
 
@@ -24,7 +25,7 @@ Some information will be required to publish your LX:
   - The version description will be used as the commit message when you publish to a set of GitHub repositories.
 ```
 
-### Publishing an LX development project
+## Publishing an LX development project
 
 Publish your LX development project by entering the main project directory (one level above the `lx`, `recipe`, and 
 `solution` directories, not within them) and running

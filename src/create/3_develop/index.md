@@ -9,6 +9,9 @@ for the learning goal you are adding to the LX, then jump right into the list of
 content development or use walk through the **Tutorial** example.
 
 ```{tip}
-As you develop LX content, create the solutions in real time, then copy your fully tested and functional work into 
-the `<yourlx>-solutions` directory before replacing sections of code with student TODOs.
+While developing a new LX, it is good practice to start working on the solution first. Once the solution is
+in place, parts of the solution with relative pedagogical value can be stripped out and replaced with 
+placeholders effectively producing a boilerplate code that can populate the learner's workspace. 
+This procedure guarantees that the resulting boilerplate is (by construction) enough for the learner to
+achieve a valid solution.
 ```
