@@ -10,12 +10,7 @@ Before working through any Duckietown Learning Experience, you first need to set
 ## 1 - Requirements
 
 We assume in this manual that you have already set up your Duckietown development environment following 
-the steps in the [Environment Setup]() section of the Duckiebot operation manual.
-
-```{todo}
-The "Environment Setup" link above is empty. Use cross-book referencing as described 
-[here](https://staging-docs.duckietown.com/daffy/devmanual-docs/language/format/index.html#cross-book-references)
-```
+the steps in the [Setup - Laptop](book-opmanual-duckiebot:laptop-setup) and [Setup - Account](book-opmanual-duckiebot:dt-account) sections of the Duckiebot operation manual.
 
 Install the following dependency libraries,
 

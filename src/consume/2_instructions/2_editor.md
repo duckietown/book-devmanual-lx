@@ -35,10 +35,6 @@ The first thing you will see is the README document, which should contain the le
 The VSCode LX editor.
 ```
 
-```{todo}
-Let's remake this image and remove all that blank space at the bottom
-```
-
 The activities in the `notebooks` directory contain the main guidance and content of a learning experience. Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
 
 * 01-Notebook-Activities
