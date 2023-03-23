@@ -28,7 +28,7 @@ Some information will be required to publish your LX:
 ## Publishing an LX development project
 
 Publish your LX development project by entering the main project directory (one level above the `lx`, `recipe`, and 
-`solution` directories, not within them) and running
+`solution` directories, **not** within them) and running
 
     dts lx publish
 
