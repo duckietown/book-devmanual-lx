@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-    - caption: What is an LX?
+    - caption: Introduction
       maxdepth: 2
       numbered: False
       chapters:
