@@ -5,10 +5,10 @@ A learning experience is a stand-alone block of activities that is self-containe
 full course of materials.
 ```
 
-**Learners** can complete activities from the Duckietown LX library. This will allow you to dive into the fundamental topics of robotics and then immediately implement behaviors on your Duckiebot using your new skills. See [How To - Progress Through an LX](env-setup) to jump right in.
+**Learners** can complete activities from the Duckietown LX library. This will allow you to dive into the fundamental topics of robotics and then immediately implement behaviors on your Duckiebot using your new skills. See [How To - Complete an LX](env-setup) to jump right in.
 
 **Instructors** can create additional custom learning experiences using the Duckietown development tools to present course content as interactive notebooks. To cement topics in practice, you can seamlessly integrate additional robot activities and simulated challenges in a preconfigured environment. 
-This prevents students from getting lost in debugging before their project even begins by eliminating extra setup steps and smoothing over complex implementation details.  You can see all available features on the [following page](lx-features) and the LX creation tutorial in [How To - Progress Through an LX](how-to-create-lx).
+This prevents students from getting lost in debugging before their project even begins by eliminating extra setup steps and smoothing over complex implementation details.  You can see all available features on the [following page](lx-features) and the LX creation tutorial in [How To - Create an LX](how-to-create-lx).
 
 ## Outcomes
 
