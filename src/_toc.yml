@@ -11,7 +11,7 @@ parts:
           - file: intro/1_overview/index
           - file: intro/2_features/index
 
-    - caption: How To - Progress Through an LX
+    - caption: How To - Complete an LX
       maxdepth: 2
       numbered: False
       chapters:
