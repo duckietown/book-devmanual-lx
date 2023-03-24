@@ -17,9 +17,17 @@ instructions on how to fork and clone this repository are located in
 Complete the following steps to start your development journey with 
 the `dts code` workflow:
 
-1) Open a terminal and navigating to the `duckietown-lx/hello-world-lx` directory
-2) Glance over the following command list for a preview of your toolkit
-3) Continue on to the next page to start your first learning experience!
+### ✅ Step 1
+
+Open a terminal and navigating to the `duckietown-lx/hello-world-lx` directory.
+
+### ✅ Step 2
+
+Glance over the following command list for a preview of your toolkit.
+
+### ✅ Step 3
+
+Continue on to the next page to start your first learning experience!
 
 ## The `dts code` commands set
 

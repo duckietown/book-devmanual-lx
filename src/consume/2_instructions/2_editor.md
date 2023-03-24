@@ -32,10 +32,18 @@ The first thing you will see is the README document, which should contain the le
 ```{figure} ../../_images/consume/code-editor.png
 :name: code-editor
 
-The VSCode LX editor.
+The VSCode Learning Experience editor.
 ```
 
-The activities in the `notebooks` directory contain the main guidance and content of a learning experience. Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
+Once you have read about the learning experience goals in the README document, you can open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience. 
+
+```{figure} ../../_images/intro/hello-world-notebook.png
+:name: first-notebook
+
+The first Hello World notebook will guide you through editing and running the activity.
+```
+
+Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
 
 * 01-Notebook-Activities
 * 02-Code-Activities

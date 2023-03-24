@@ -18,6 +18,8 @@ The following activity types can be implemented with the Duckietown Learning Exp
 * [Duckiebot Agent](agents-intro)
 * [Evaluation](evaluation-intro)
 
+---
+
 (notebooks-intro)=
 ## Activity: Notebooks
 
@@ -65,6 +67,8 @@ Every learning experience should also revolve around a main _Learning Goal_ (or 
 The Object Detection learning experience will take you through the process of collecting data from the Duckietown simulator and formatting it to be used to train a neural network to perform object detection using the robot's camera image. We will use one of the most popular object detection neural networks, called YOLO (v5). Finally you will integrate this trained model into the autonomy stack to create a Duckiebot agent that stops whenever an object (duckie) is detected in the road.
 ```
 
+---
+
 (workbench-intro)=
 ## Activity: Workbench Tool
 
@@ -82,6 +86,8 @@ It can also be used to display the Object Detection model results as applied to 
 :name: workbench-activity-detector
 ```
 
+---
+
 (simulator-intro)=
 ## Activity: Simulated Agent
 
@@ -90,6 +96,8 @@ The _Workbench_ can also run simulated Duckiebot agents, allowing learners to te
 ```{figure} ../../_images/intro/workbench-sim-view.png
 :name: sim-activity-intro
 ```
+
+---
 
 (agents-intro)=
 ## Activity: Duckiebot Agent
@@ -123,6 +131,8 @@ The _Workbench_ can interface with the Duckiebot using the ROS network and run c
 ```
 ````
 `````
+
+---
 
 (evaluation-intro)=
 ## Activity: Evaluation
