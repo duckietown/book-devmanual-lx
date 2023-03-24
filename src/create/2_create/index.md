@@ -36,7 +36,7 @@ dependencies will help focus your activity development.
 
 Create your LX development project by running
 
-    dts lx create
+    dts lx create   
 
 Wait for the form UI to appear or click on the URL provided in the terminal to access the following form:
 

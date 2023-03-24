@@ -5,7 +5,11 @@ systems that will perform in the simulator or on a real world robot.
 
 ## Find more Duckietown Learning Experiences
 
-You can find example LX packages to walk through in the [Duckietown Learning Experiences repository](https://github.com/duckietown/duckietown-lx)
+You can find example LX packages to walk through in the [Duckietown Learning Experiences repository](https://github.com/duckietown/duckietown-lx).
+
+```{todo}
+Link Duckietown LX library page when created
+```
 
 ## Worried about forgetting the workflow?
 
@@ -27,14 +31,7 @@ There you can request an invitation to the Duckietown Stack Overflow team and fi
 Duckietown for a wide variety of projects and learning experiences.
 
 
-## What's next?
+## Create your own LX
 
-You can move on to developing your own custom Duckiebot demo behaviors by following the 
-[Duckiebot Demo Development LX]().
-
-```{todo}
-The link above "**Duckiebot Demo Development LX**" is empty.
-```
-
-Or begin developing your own custom learning experiences to teach others by continuing on to the next 
+You can begin developing your own custom learning experiences to teach others by continuing on to the next 
 section of this development guide: [How To - Create an LX](how-to-create-lx).
