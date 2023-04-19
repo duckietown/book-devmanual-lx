@@ -48,7 +48,7 @@ The LX create tool configuration interface.
 
 ```{todo}
 Let's retake figure {numref}`fig:create-interface` with less empty space on the sides of the form to guarantee better 
-visibility given the narrow viewport of these docs. Example: [the init sd card form](https://staging-docs.duckietown.com/daffy/opmanual-duckiebot/_images/init-sd-card-gui-01.png).
+visibility given the narrow viewport of these docs. Example: [the init sd card form](https://staging-docs.duckietown.com/ente/opmanual-duckiebot/_images/init-sd-card-gui-01.png).
 ```
 
 
