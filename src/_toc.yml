@@ -36,10 +36,10 @@ parts:
             sections:
                 - file: create/3_develop/1_notebooks
                 - file: create/3_develop/2_editor
-                - file: create/3_develop/3_vnc
-                - file: create/3_develop/4_challenges
-                - file: create/3_develop/5_simulator
-                - file: create/3_develop/6_duckiebot
+                - file: create/3_develop/3_workbench_tools
+                - file: create/3_develop/4_workbench_sims
+                - file: create/3_develop/5_workbench_bots
+                - file: create/3_develop/6_challenges
           - file: create/4_publish/index
             sections:
               - file: create/4_publish/1_test
@@ -51,9 +51,3 @@ parts:
       chapters:
         - file: background/1_assembly/index
         - file: background/2_workflow/index
-          sections:
-            - file: background/2_workflow/1_build
-            - file: background/2_workflow/2_editor
-            - file: background/2_workflow/3_workbench
-            - file: background/2_workflow/4_evaluate
-            - file: background/2_workflow/5_submit

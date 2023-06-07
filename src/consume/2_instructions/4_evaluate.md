@@ -1,3 +1,4 @@
+(dts-code-evaluate)=
 # `dts code evaluate`
 
 ## What does it do?

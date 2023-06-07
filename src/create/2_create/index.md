@@ -1,3 +1,4 @@
+(how-to-create-lx)=
 # Step 2: Create a New LX
 
 New learning experiences are developed within the [](sec:lx-development-workspace).

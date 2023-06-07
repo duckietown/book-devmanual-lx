@@ -1,4 +1,4 @@
-(how-to-create-lx)=
+(lx-structure)=
 # Step 1: Review the LX Structure
 
 A learning experience is structured in three parts, each implemented by a different directory. 

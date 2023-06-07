@@ -1,3 +1,4 @@
+(lx-notebooks)=
 # Notebook Activities
 
 ## Educational purpose
