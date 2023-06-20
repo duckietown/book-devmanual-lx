@@ -35,7 +35,6 @@ parts:
           - file: create/3_develop/index
             sections:
                 - file: create/3_develop/1_notebooks
-                - file: create/3_develop/2_editor
                 - file: create/3_develop/3_workbench_tools
                 - file: create/3_develop/4_workbench_sims
                 - file: create/3_develop/5_workbench_bots
