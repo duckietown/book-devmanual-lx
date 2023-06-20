@@ -1,3 +1,4 @@
+(dts-code-build)=
 # `dts code build`
 
 ## What does it do?

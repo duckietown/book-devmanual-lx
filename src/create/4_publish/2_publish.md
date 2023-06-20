@@ -1,3 +1,4 @@
+(how-to-publish-lx)=
 # Publishing Your LX
 
 The three directories making up an LX can be published to their respective repositories 

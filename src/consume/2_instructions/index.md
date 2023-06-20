@@ -65,11 +65,7 @@ Update the URL to the challenges server once we move to `duckietown.com`.
 ````{tip}
 Remember that in addition to the `dts code` workflow, you also have the complete set of Duckietown development tools 
 at your disposal for building and running the projects within each learning experience.  
-Check out the [Duckiebot](book-opmanual-duckiebot:TODO) and [Duckietown Simulator](book-opmanual-duckiebot:laptop-setup) 
+
+Check out the [Duckiebot](book-opmanual-duckiebot:ops-tools) and [DTProject](book-devmanual-software:dtproject) 
 development pages for more helpful Duckietown shell commands.
-
-```{todo}
-Update the cross-book references in this tip: `opsmanual-duckiebot:TODO` and `opsmanual-duckiebot:TODO`.
-```
-
 ````
