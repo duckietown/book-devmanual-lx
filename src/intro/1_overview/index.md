@@ -1,3 +1,4 @@
+(duckietown-lx)=
 # What is a Duckietown LX?
 
 ```{admonition} Definition

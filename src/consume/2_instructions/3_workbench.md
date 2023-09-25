@@ -1,3 +1,4 @@
+(dts-code-workbench)=
 # `dts code workbench`
 
 ## What does it do?

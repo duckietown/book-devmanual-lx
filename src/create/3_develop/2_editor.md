@@ -1,4 +1,5 @@
-# Editor Features
+(lx-editor)=
+# Custom Editor Features
 
 ## Educational purpose
 

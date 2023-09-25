@@ -1,3 +1,4 @@
+(dts-code-evaluate)=
 # `dts code evaluate`
 
 ## What does it do?
@@ -24,7 +25,7 @@ of your browser to access the real-time visualization of your evaluation simulat
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
 reference the [](how-to-get-help) section of this manual.
 
-## Troubleshooting
+## Troubleshooting 
 
 ```{trouble}
 
@@ -47,7 +48,6 @@ over each command. This section documents each of the flags available to extend 
 
 You can also explore the [Behind the Scenes - dts code evaluate](behind-the-scenes-code-evaluate) chapter
 for more details on what happens in the background when you run the `dts code evaluate` command.
-
 
 ### Command options
 

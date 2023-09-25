@@ -1,3 +1,4 @@
+(lx-resources)=
 # Step 3: What's Next?
 
 We have seen how a few Duckietown shell commands is all we need to learn and develop robotic 

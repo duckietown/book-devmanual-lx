@@ -1,4 +1,5 @@
-# Duckiebot Demos
+(lx-agents)=
+# Simulated Agents
 
 ## Educational purpose
 
@@ -10,18 +11,25 @@ Empty section here
 ## Edit zones
 
 The following table contains a list of the files and directories that you may need to update to implement this type 
-of LX activity. If you would like a full walkthrough showing how to implement Duckiebot agents, skip to the 
-next 
-section.
+of LX activity. If you would like a full walkthrough showing how to implement VNC experiences, skip to the next section.
 
 ```{list-table} Edit zones
 :header-rows: 1
-:name: bot-table
+:name: vnc-table
 
 * - Feature
   - File Location
   - Purpose
-* - fill
+* - Desktop Icon
+  - fill
+  - fill
+* - Launch Script
+  - fill
+  - fill
+* - Build Requirements
+  - fill
+  - fill
+* - Experience Scripts
   - fill
   - fill
 ```
@@ -29,6 +37,7 @@ section.
 ```{todo}
 Complete the table and remove the `fill` placeholders.
 ```
+
 
 ## Tutorial
 

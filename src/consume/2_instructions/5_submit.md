@@ -1,3 +1,4 @@
+(dts-code-submit)=
 # `dts code submit`
 
 ## What does it do?

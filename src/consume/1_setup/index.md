@@ -56,7 +56,7 @@ setting up Docker in the Duckiebot operation mmanual.
 ## 3 - SSL certificate
 
 We use SSL certificates and TLS encryption to guarantee the highest standard of safety and privacy.
-Let us setup a local SSL certificate needed to run the learning experience editor inside your browser,
+Let us set up a local SSL certificate needed to run the learning experience editor inside your browser,
 
     dts setup mkcert
 
