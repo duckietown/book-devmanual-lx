@@ -63,6 +63,18 @@ reference the [](how-to-get-help) section of this manual.
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
+:::{trouble}
+
+These errors appear: `requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.43/containers/84ce.../start`
+
+and it is complained that certain ports are in conflict and could not be used.
+
+---
+
+Please check your running docker containers and ports with: `docker ps --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Ports}}"`
+And stop the ones unnecessary, that occupy the mentioned conflicted ports.
+:::
+
 ## Extra Options
 
 ```{warning}
