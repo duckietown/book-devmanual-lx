@@ -1,4 +1,4 @@
-# The Learning Experiences Developer Manual
+# The Learning Experiences Manual
 
 A Duckietown Learning Experience provides a structured template for using the Duckietown infrastructure to create 
 and work through high quality learning activities. 
