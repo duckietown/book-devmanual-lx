@@ -35,7 +35,7 @@ Continue on to the next page to start your first learning experience!
 
 Builds a learning experience into a Docker image that can then be run.
 
-### `dts code edit`
+### `dts code editor`
 
 Spins up a browser-based development environment that can be used to work 
 through the Learning Experience (LX) using `VSCode`.
