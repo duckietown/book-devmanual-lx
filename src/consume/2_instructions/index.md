@@ -1,16 +1,14 @@
+(devmanual-lx-dts-code-workflow)=
 # Step 2: Using the `dts code` workflow
 
 The `dts code` workflow is a set of simple but powerful Duckietown shell commands that you can use to edit, test, 
 and run Duckietown Learning Experiences (LX). These tools can
 * spin up a development environment
 * run new robot behaviors in the simulator and on a Duckiebot
-* submit your results to Duckietown challenges
+* Submit your results to Duckietown challenges
 * and much more
 
-We will gain familiarity with this workflow by walking through the **hello-world** learning experience from 
-the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx) as an example - 
-instructions on how to fork and clone this repository are located in 
-[](env-setup).
+We will gain familiarity with this workflow by walking through the **hello-world** learning experience from the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx) as an example - instructions on how to fork and clone this repository are located in [](env-setup).
 
 ## Getting started
 
@@ -19,16 +17,17 @@ the `dts code` workflow:
 
 ### ✅ Step 1
 
-Open a terminal and navigating to the `duckietown-lx/hello-world-lx` directory.
+Open a terminal and navigate to the `duckietown-lx/hello-world-lx` directory.
 
 ### ✅ Step 2
 
-Glance over the following command list for a preview of your toolkit.
+Glance over [](devmanual-lx-dts-code-command-set) for a preview of your toolkit.
 
 ### ✅ Step 3
 
-Continue on to the next page to start your first learning experience!
+Continue to the next page to start your first learning experience!
 
+(devmanual-lx-dts-code-command-set)=
 ## The `dts code` commands set
 
 ### `dts code build`
@@ -42,9 +41,9 @@ through the Learning Experience (LX) using `VSCode`.
 
 ### `dts code workbench`
 
-Creates a virtual environment with Desktop icons that will allow you to easily run activities, 
+Creates a virtual environment with Desktop icons that will allow you to run activities easily, 
 simulate a Duckiebot directed through a virtual world by your control algorithms, 
-or execute a demo on your real world Duckiebot - 
+or execute a demo on your real-world Duckiebot - 
 all with debugging and visualization tools to help you along the way.
 
 ### `dts code evaluate`
