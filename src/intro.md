@@ -1,3 +1,4 @@
+(lx-dev-intro)=
 # The Learning Experiences Manual
 
 A Duckietown Learning Experience provides a structured template for using the Duckietown infrastructure to create 
