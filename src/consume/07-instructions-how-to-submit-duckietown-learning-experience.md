@@ -1,14 +1,20 @@
+```{seo}
+:description: Submit your Duckietown learning experience solutions to the challenge server for assessment and feedback.
+:keywords: Duckietown, submit LX, robotics education, challenge server, learning experience
+```
+
 (dts-code-submit)=
 # `dts code submit`
 
 ## What does it do?
 
-The `dts code submit` command is very similar to the `dts code evaluate` command, but instead of evaluating your 
-agent's performance on your local machine, it uploads your agent to the 
-[Duckietown Challenges Server](https://challenges.duckietown.org) for evaluation on the cloud.
+The `dts code submit` command is very similar to the `dts code evaluate` command, but instead of evaluating your agent's performance on your local machine, it uploads your agent to the [Duckietown Challenges Server](https://challenges.duckietown.org) for evaluation on the cloud.
 
-```{figure} ../../_images/consume/challenges-server.png
-:name: challenges-server
+```{figure} ../_images/consume/challenges-server.png
+:name: challenges_server_1
+:alt: Duckietown Challenges Server 2024
+:align: center
+:width: 90%
 
 The Duckietown challenges server displaying results for submission simulations.
 ```
@@ -40,7 +46,7 @@ You need to be in the root directory of the LX in order to run the `dts code` co
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code` workflow, don't worry about the following section just yet. 
+If this is your first time using the `dts code` workflow, do not worry about the following section just yet. 
 You now have all the tools to complete your first learning experience - go for it!
 ```
 

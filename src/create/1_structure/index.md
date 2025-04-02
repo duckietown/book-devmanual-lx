@@ -1,7 +1,7 @@
 (lx-structure)=
 # Step 1: Review the LX Structure
 
-A learning experience is structured in three parts, each implemented by a different directory. 
+A Duckietown learning experience is structured in three parts, each implemented by a different directory. 
 These directories are created for you when running the command `dts lx create` (more on this in the following
 sections of this manual). When distributed, they will reside in three different Git repositories.
 

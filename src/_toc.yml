@@ -8,23 +8,23 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: intro/1_overview/index
-          - file: intro/2_features/index
+          - file: intro/01-what-is-a-duckietown-learning-experience
+          - file: intro/02-lx-features-and-activities
 
     - caption: How To - Complete an LX
       maxdepth: 2
       numbered: False
       chapters:
-          - file: consume/1_setup/index
-          - file: consume/2_instructions/index
+          - file: consume/01-duckietown-lx-environment-setup
+          - file: consume/02-instructions-dts-code-workflow-usage
             sections:
-              - file: consume/2_instructions/1_build
-              - file: consume/2_instructions/2_editor
-              - file: consume/2_instructions/3_workbench
-              - file: consume/2_instructions/4_evaluate
-              - file: consume/2_instructions/5_submit
+              - file: consume/03-instructions-how-to-build-duckietown-lx-environment
+              - file: consume/04-instructions-how-to-set-up-duckietown-lx-code-editor
+              - file: consume/05-instructions-how-to-use-duckietown-lx-workbench-tools
+              - file: consume/06-instructions-how-to-evaluate-learning-experience
+              - file: consume/07-instructions-how-to-submit-duckietown-learning-experience
 
-          - file: consume/3_next/index
+          - file: consume/08-instructions-duckietown-lx-whats-next
 
     - caption: How To - Create an LX
       maxdepth: 2
