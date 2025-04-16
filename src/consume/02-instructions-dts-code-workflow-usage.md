@@ -1,116 +1,77 @@
 ```{seo}
-:description: Learn how to use the `dts code` workflow to build, edit, and run Duckietown Learning Experiences in simulation or on hardware.
-:keywords: Duckietown, dts code, learning experience, LX, simulator, Duckiebot, robotics education, development tools
+:description: Learn about the `dts code` workflow in Duckietown and how to use it to develop, test, and submit your Duckietown Learning Experiences (LX).
+:keywords: Duckietown, learning experience, LX, `dts code`, development workflow, Duckiebot, simulator, submit results, Docker, VSCode
 ```
 
-(env-setup)=
-# Step 1: Environment Setup
 
-Before working through any Duckietown Learning Experience, you first need to set up your development environment.
+(devmanual-lx-dts-code-workflow)=
+# Step 2: Using the `dts code` workflow
 
-```{important}
-🚧 Complete the following setup steps carefully to prevent running into bugs later on. 🚧
+The `dts code` workflow is a set of simple but powerful Duckietown shell commands that you can use to edit, test, 
+and run Duckietown Learning Experiences (LX). These tools can
+* Spin up a development environment
+* Run new robot behaviors in the simulator and on a Duckiebot
+* Submit your results to Duckietown challenges
+* And much more
+
+We will gain familiarity with this workflow by walking through the **hello-world** learning experience from the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx) as an example. Instructions on how to fork and clone this repository are located in [](env-setup).
+
+## Getting started
+
+Complete the following steps to start your development journey with 
+the `dts code` workflow:
+
+### ✅ Step 1
+
+Open a terminal and navigate to the `duckietown-lx/hello-world-lx` directory.
+
+### ✅ Step 2
+
+Glance over [](devmanual-lx-dts-code-command-set) for a preview of your toolkit.
+
+### ✅ Step 3
+
+Continue to the next page, [](dts-code-build), to start your first learning experience!
+
+(devmanual-lx-dts-code-command-set)=
+## The `dts code` commands set
+
+```{todo}
+update this list on ente
 ```
 
-## 1 - Requirements
+### `dts code build`
 
-We assume in this manual that you have already set up your Duckietown development environment following 
-the steps in the [Setup - Laptop](book-opmanual-duckiebot:laptop-setup) and [Setup - Account](book-opmanual-duckiebot:dt-account) sections of the Duckiebot operation manual.
+Builds a learning experience into a Docker image that can then be run.
 
-Then, install the following dependency libraries:
+### `dts code edit`
 
-`````{tab-set}
-````{tab-item} Linux
-Open a terminal and run the following command:
-```bash
-sudo apt install libnss3-tools
+Spins up a browser-based development environment that can be used to work 
+through the Learning Experience (LX) using `VSCode`.
+
+### `dts code workbench`
+
+Creates a virtual environment with Desktop icons that will allow you to run activities easily, simulate a Duckiebot directed through a virtual world by your control algorithms, or execute a demo on your real-world Duckiebot - 
+all with debugging and visualization tools to help you along the way.
+
+### `dts code evaluate`
+
+Evaluates your solutions to the learning experience activities on your local machine to quickly inform you of your progress.
+
+### `dts code submit`
+
+Submits your work to the 
+[Duckietown Challenges Server](https://challenges.duckietown.org) so that you can monitor your results and view the work of other developers around the world.
+
+<!--
+```{todo}
+Update the URL to the challenges server once we move to `duckietown.com`.
 ```
+-->
+
+````{tip}
+Remember that in addition to the `dts code` workflow, you also have the complete set of Duckietown development tools at your disposal for building and running the projects within each learning experience.  
+
+Check out the [Duckiebot](book-opmanual-duckiebot:ops-tools) and [DTProject](book-devmanual-software:dtproject) 
+development pages for more helpful Duckietown shell commands.
 ````
-
-````{tab-item} macOS
-Open a terminal and run the following command:
-```bash
-brew install nss
-```
-````
-
-````{tab-item} Windows
-No need to install dependencies if you are running Windows.
-````
-````` 
-
-Then update the Duckietown shell and the shell commands:
-
-```bash
-pip3 install -U duckietown-shell
-dts update
-```
-
-## 2 - Docker Configuration
-
-After completing Duckietown development setup instructions, add your `docker.io` credentials to the Duckietown shell by running the following command:
-
-```bash
-dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
-```
-
-```{note}
-These are the `<USERNAME>` and `<PASSWORD>` that you use to log in to DockerHub (hub.docker.io) when 
-setting up Docker in the Duckiebot operation manual.
-```
-
-## 3 - SSL Certificate
-
-We use SSL certificates and TLS encryption to guarantee the highest standard of safety and privacy. 
-
-Set up a local SSL certificate needed to run the LX editor inside your browser:
-
-```bash
-dts setup mkcert
-```
-
-## 4 - The `hello-world` LX
-
-We will be walking through the **hello-world** LX in the following pages. 
-
-Fork and clone the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository to follow along and complete the tutorial activities. 
-
-This will give you access to the full library of Duckietown Learning Experiences.
-
-1. To store your code while also keeping the ability to pull updates from our version of this repository, create your own fork. Start by pressing "Fork" in the top right corner of [the duckietown-lx repository page on GitHub](https://github.com/duckietown/duckietown-lx). Your new repository fork will appear in your GitHub repository list as:
-
-    ```
-    <your_username>/duckietown-lx
-    ```
-
-    Then clone your new repository, replacing your GitHub username in the command below:
-
-    ```bash
-    git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
-    ```
-
-2. Configure the Duckietown version of this repository as the upstream repository to synchronize with your fork. Navigate to the repository folder and then list the current remote repository for your fork:
-
-    ```bash
-    git remote -v
-    ```
-
-    Specify a new remote upstream repository:
-
-    ```bash
-    git remote add upstream https://github.com/duckietown/duckietown-lx
-    ```
-
-    Confirm that the new upstream repository was added to the list:
-
-    ```bash
-    git remote -v
-    ```
-
-    You can now push your work to your repository using the standard GitHub workflow, and at the beginning of every learning experience you will be prompted to pull from the upstream repository—updating your exercises to the latest Duckietown version:
-
-    ```bash
-    git pull upstream mooc2022
-    ```
-
-That is it! You are ready to move on to the next section and start your development journey with the `dts code` workflow.

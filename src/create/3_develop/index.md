@@ -9,8 +9,7 @@
 ```{tableofcontents}
 ```
 
-The following chapters outline the implementation steps and build requirements for each type of activity that a 
-learning experience may contain.  
+The following chapters outline the implementation steps and build requirements for each type of activity that a learning experience may contain.  
 
 Use the activity descriptions to determine which type is right 
 for the learning goal you are adding to your LX.
