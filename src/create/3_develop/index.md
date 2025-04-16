@@ -1,3 +1,9 @@
+```{seo}
+:description: Learn how to create new Duckietown Learning Experiences (LX) with reusable robotics education components and streamlined developer tools.
+:keywords: Duckietown, learning experience, LX development, LX creation, robotics education
+```
+
+(duckietown-lx-create-develop-activities)=
 # Step 3: Develop Your Activities
 
 ```{tableofcontents}

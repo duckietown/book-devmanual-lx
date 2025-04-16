@@ -30,8 +30,8 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: create/1_structure/index
-          - file: create/2_create/index
+          - file: create/01-lx-structure-duckietown-learning-experience
+          - file: create/02-how-to-create-a-duckietown-learning-experience
           - file: create/3_develop/index
             sections:
                 - file: create/3_develop/1_notebooks
