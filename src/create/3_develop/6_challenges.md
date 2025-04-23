@@ -1,7 +1,11 @@
 (lx-challenges)=
 # Evaluated Challenges
 
-The agents developed in Duckietown Learning Experiences can be evaluated against a set of benchmarks defined as a _Duckietown Challenge_.
+```{warning}
+Update April 2025: The challenges server is undergoing maintainance as we move towards a new simulation environment.
+```
+
+The agents developed in LXs can be evaluated against a set of benchmarks defined as a _Duckietown Challenge_.
 
 Learners may evaluate their agent locally via 
 

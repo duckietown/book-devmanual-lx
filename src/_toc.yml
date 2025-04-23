@@ -32,21 +32,22 @@ parts:
       chapters:
           - file: create/01-lx-structure-duckietown-learning-experience
           - file: create/02-how-to-create-a-duckietown-learning-experience
-          - file: create/3_develop/index
+          - file: create/03-how-to-develop-your-learning-activities
             sections:
                 - file: create/3_develop/1_notebooks
-                - file: create/3_develop/3_workbench_tools
-                - file: create/3_develop/4_workbench_sims
-                - file: create/3_develop/5_workbench_bots
+#                - file: create/3_develop/2_editor
+#                - file: create/3_develop/3_workbench_tools
+#                - file: create/3_develop/4_workbench_sims
+#                - file: create/3_develop/5_workbench_bots
                 - file: create/3_develop/6_challenges
           - file: create/4_publish/index
             sections:
               - file: create/4_publish/1_test
               - file: create/4_publish/2_publish
 
-    - caption: Behind the Scenes
-      maxdepth: 2
-      numbered: False
-      chapters:
-        - file: background/1_assembly/index
-        - file: background/2_workflow/index
+#    - caption: Behind the Scenes
+#      maxdepth: 2
+#      numbered: False
+#      chapters:
+#        - file: background/1_assembly/index
+#        - file: background/2_workflow/index

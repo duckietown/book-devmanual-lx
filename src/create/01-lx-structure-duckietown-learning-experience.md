@@ -6,18 +6,15 @@
 (lx-structure)=
 # Step 1: Review the LX Structure
 
-A Duckietown learning experience is structured in three parts, each implemented by a different directory. 
-These directories are created for you when running the command `dts lx create` (more on this in the following
-sections of this manual). When distributed, they will reside in three different Git repositories.
+A Duckietown LX is structured in three parts, each implemented by a different directory. 
+These directories are created for you when running the command `dts lx create` (more on this in the following sections of this manual). When distributed, they will reside in three different Git repositories.
 
-If you are reading this as a learner, you will only need to use the single LX directory provided to you
-by your instructor or class instructions. All the necessary behind the scenes components to drive the LX 
-activities will be handled automatically by `dts`.
+If you are reading this as a learner, you will only need to use the single LX directory provided by your instructor. All the necessary behind the scenes components to drive the LX activities will be handled automatically by `dts`.
 
 (lx-structure-three-parts-make-a-single-lx)=
-## Three parts make a single LX
+## Three but One
 
-A Learning Experience (LX) is broken down into three parts:
+A LX is broken down into three parts:
 
 - A _learner's workspace_;
 - A _back-end_;
@@ -25,55 +22,39 @@ A Learning Experience (LX) is broken down into three parts:
 
 
 (lx-structure-the-learners-workspace)=
-### The _learner's workspace_
+### The _learner's workspace_ (or, the _front-end_)
 
-The _learner's workspace_ (also referred to as `the meat`) is the only part that a learner will ever need to 
-interact with. It contains instructions, interactive learning materials (e.g., jupyter notebooks) and 
-boilerplate code that the learner will have to work on, complete, and in some cases submit.
-
+The _learner's workspace_ (also referred to as "`the meat`") is the only part that a learner will interact with. It contains instructions, interactive learning materials (e.g., Jupyter notebooks) and boilerplate code that the learner will have to work on.
 
 (lx-structure-the-back-end)=
 ### The _back-end_
 
-The _back-end_ (also referred to as `the recipe`) is what defines the rules of a learning experience.
-It contains all those files that are necessary for the _learner's workspace_ to function but must be protected 
-from the learner's edits. The `recipe` constitues the immutable part of a learning experience, 
-and it is shared by all the learners' workspaces and solutions of said LX;
+The _back-end_ (also referred to as "`the recipe`") is what defines the rules of a LX.
+It contains all those files that are necessary for the _learner's workspace_ to function but must be protected from the learner's edits. The recipe is the immutable part of a LX, and it is common to all the learners' workspaces and solutions.
 
-**For example,** in a robot localization exercise, the back-end might have access to a map of the environment 
-and a trajectory taken by a robot within it. The back-end would use this data to generate simulated sensors' 
-readings and pass those on to the _learner's workspace_. The learner is required to implement a system that can
-consume these readings and reconstruct the original trajectory taken by the robot. In this case, the back-end
-must protect the ground-truth trajectory of the robot or else the solution would be exposed to the learner,
-effectively invalidating the usefulness of any grading.
-
+**For example**, in a localization exercise, the back-end might have access to a map of the environment, and a trajectory taken by a robot within the map. The back-end would use this data to generate simulated sensors' readings and pass those to the _learner's workspace_. The learner is required to implement a system that can consume these readings and reconstruct the original trajectory taken by the robot. In this case, the back-end must protect the ground-truth trajectory of the robot, else the solution would be exposed to the learner, invalidating grading.
 
 (lx-structure-the-solution)=
 ### The _solution_
 
-The _solution_ part is simply a copy of the _learner's workspace_ but with all the solutions to the
-activities and exercises already implemented. This is usually used for two main reasons: (i) to make
-sure that the boilerplate provided in the _learner's workspace_ is enough for a learner to implement
-a correct solution to the problems presented; (ii) to serve as example solutions to problems that are
-optional or not graded;
+The _solution_ part is simply a copy of the _learner's workspace_ but with all the solutions to the activities and exercises already implemented. This is usually used for two main reasons: 
+1. to make sure that the boilerplate provided in the _learner's workspace_ is sufficient to implement a solution to the learning activities presented;
+2. to serve as example solutions to non-graded learning activities.
 
----
+```{info}
+You can skip this if you are a vegetarian.
 
-```{tip}
-The reason why the **back-end** the **learner's workspace** are also respectively referred to as 
-**the recipe** and **the meat** comes from an analogy with a cooking scenario. 
-The back-end defines the rules, so it is a **recipe** for
-how the learning experience works, the learner brings the content, the solution, the substance, hence the
-**meat** that together with the recipe makes a cooked meal, in this case a solved learning experience.
-Morevoer, similarly to how better cuts of meat lead to better tasting meals, better solutions lead to
-better scores for the learner. Solving a learning experience just became a hunt for the best meat.
+The reason why the **back-end** the **learner's workspace** are also respectively referred to as **the recipe** and **the meat** comes from a cooking analogy. 
+
+The back-end defines the rules, so it is a **recipe** for how the learning experience works. The learner brings instead the content, the solution, the substance, hence the **meat**, that along with the recipe makes a cooked meal (in this case a solved learning experience).
+
+Morevoer, similarly to how better cuts of meat can lead to better tasting meals, better solutions lead to better scores for the learner.
 ```
 
 (sec:lx-development-workspace)=
 ## Development Workspace
 
-An LX development workspace is set up on running `dts lx create`.  This command generates a workspace directory that is named using a filesafe version of the LX name. {numref}`fig:lx-development-tree` shows an example of how
-an LX development workspace is structured.
+A LX development workspace is set up with `dts lx create`.  This command generates a workspace directory that is named using a filesafe version of the LX name. {numref}`fig:lx-development-tree` shows an example of how an LX development workspace is structured.
 
 ```{figure} ../_images/create/dev-tree.png
 :name: dev-tree
