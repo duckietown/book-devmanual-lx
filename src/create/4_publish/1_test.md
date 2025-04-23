@@ -6,6 +6,6 @@ Provide unit tests for students in the `tests` directory. They can be run in VSC
 ```{image} ../../_images/consume/test-interface.png
 ```
 
-```{info}
+```{note}
 If you would like to see dedicated `dts` commands for testing, let us know on Slack!  
 ```

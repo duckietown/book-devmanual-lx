@@ -50,4 +50,10 @@ parts:
       numbered: False
       chapters:
 #        - file: background/1_assembly/index
-        - file: background/2_workflow/3_workbench
+        - file: background/2_workflow/index
+          sections:
+#            - file: background/2_workflow/1_build
+#            - file: background/2_workflow/2_editor
+            - file: background/2_workflow/3_workbench
+#            - file: background/2_workflow/4_evaluate
+#            - file: background/2_workflow/5_submit
