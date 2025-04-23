@@ -45,9 +45,9 @@ parts:
               - file: create/4_publish/1_test
               - file: create/4_publish/2_publish
 
-#    - caption: Behind the Scenes
-#      maxdepth: 2
-#      numbered: False
-#      chapters:
+    - caption: Behind the Scenes
+      maxdepth: 2
+      numbered: False
+      chapters:
 #        - file: background/1_assembly/index
-#        - file: background/2_workflow/index
+        - file: background/2_workflow/3_workbench
