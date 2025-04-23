@@ -1,3 +1,9 @@
+```{seo}
+:description: Discover how to use the Duckietown Workbench environment to run simulations and agent-based tools in robotics education.
+:keywords: Duckietown, workbench, robotics simulation, tools, learning experience
+```
+
+(dts-code-workbench)=
 # `dts code workbench`
 
 ## What does it do?
@@ -48,8 +54,7 @@ solutions that you develop while working through a learning experience.
    
    This is the modality "drivers running on the robot, agent running on the laptop."
 
-If you run into any issues using this command, you can search the troubleshooting symptoms below or 
-reference the [](how-to-get-help) section of this manual.
+If you run into any issues using this command, you can search the troubleshooting symptoms below or reference the [](how-to-get-help) section of this manual.
 
 ## Troubleshooting
 
@@ -62,10 +67,22 @@ reference the [](how-to-get-help) section of this manual.
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
+```{trouble}
+ 
+ These errors appear: `requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.43/containers/84ce.../start`
+ 
+ and it is complained that certain ports are in conflict and could not be used.
+ 
+ ---
+ 
+ Please check your running docker containers and ports with: `docker ps --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Ports}}"`
+ And stop the ones unnecessary, that occupy the mentioned conflicted ports.
+ ```
+
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code workflow`, don't worry about the following section just yet. Continue 
+If this is your first time using the `dts code workflow`, do not worry about the following section just yet. Continue 
 on to the next page to evaluate the soliution to your first LX activity.
 ```
 

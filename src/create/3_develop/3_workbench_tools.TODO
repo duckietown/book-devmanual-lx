@@ -1,4 +1,5 @@
-# VNC Experiences
+(lx-tools)=
+# Workbench Tools
 
 ## Educational purpose
 

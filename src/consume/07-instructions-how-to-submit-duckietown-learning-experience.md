@@ -1,25 +1,33 @@
-# `dts code evaluate`
+```{seo}
+:description: Submit your Duckietown learning experience solutions to the challenge server for assessment and feedback.
+:keywords: Duckietown, submit LX, robotics education, challenge server, learning experience
+```
+
+(dts-code-submit)=
+# `dts code submit`
 
 ## What does it do?
 
-The `dts code evaluate` command runs your code to implement a robot agent at the end of each LX and evaluates it 
-against some set of performance metrics for the Duckiebot. This might be distance travelled in an obstacle avoidance 
-challenge, intersections successful and lawfully handled in the Duckietown city, or any other hurdle that the LX 
-creator may have defined for you.  
+The `dts code submit` command is very similar to the `dts code evaluate` command, but instead of evaluating your agent's performance on your local machine, it uploads your agent to the [Duckietown Challenges Server](https://challenges.duckietown.org) for evaluation on the cloud.
 
-Details of the evaluation metrics will be outlined in the LX `README` file.
+```{figure} ../_images/consume/challenges-server.png
+:name: challenges_server_1
+:alt: Duckietown Challenges Server 2024
+:align: center
+:width: 90%
+
+The Duckietown challenges server displaying results for submission simulations.
+```
 
 ## How do I run it?
 
-We suggest you evaluate your work locally before submitting your solution.
-You can do so by running the following command,
+When you are ready to submit your solution to the challenge for your LX, use the following command,
 
-    dts code evaluate
+    dts code submit
 
-This should take a few minutes.
-
-Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
-of your browser to access the real-time visualization of your evaluation simulation and statistics.
+This will package all of your code and send it to the Duckietown Challenges Server for evaluation. 
+The command will output a URL that you can use to follow your submission and compare your agent with other 
+developers' solutions from all over the world.
 
 If you run into any issues using this command, you can search the troubleshooting symptoms below or 
 reference the [](how-to-get-help) section of this manual.
@@ -38,15 +46,15 @@ You need to be in the root directory of the LX in order to run the `dts code` co
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code` workflow, don't worry about the following section just yet. 
-Continue on to the next page to submit the soliution to your first LX activity.
+If this is your first time using the `dts code` workflow, do not worry about the following section just yet. 
+You now have all the tools to complete your first learning experience - go for it!
 ```
 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
 over each command. This section documents each of the flags available to extend the `dts code evaluate` command.
 
-You can also explore the [Behind the Scenes - dts code evaluate](behind-the-scenes-code-evaluate) chapter
-for more details on what happens in the background when you run the `dts code evaluate` command.
+You can also explore the [Behind the Scenes - dts code submit](behind-the-scenes-code-submit) chapter
+for more details on what happens in the background when you run the `dts code submit` command.
 
 
 ### Command options
@@ -74,4 +82,4 @@ optional arguments:
   -L LAUNCHER, --launcher LAUNCHER
                         The launcher to use as entrypoint to the submission container
   -v, --verbose         Be verbose
-```
+````

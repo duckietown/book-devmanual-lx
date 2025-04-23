@@ -1,15 +1,18 @@
+```{seo}
+:description: Learn how to publish your Duckietown Learning Experience (LX) project using the `dts code publish` command, and manage repositories and branches effectively.
+:keywords: Duckietown, Learning Experience, LX, publish, dts code, GitHub, version control, repository management
+```
+
+(how-to-publish-lx)=
 # Publishing Your LX
 
-The three directories making up an LX can be published to their respective repositories 
-using the `dts code publish` command.  
+The three directories making up an LX can be published to their respective repositories using the `dts code publish` command.  
 
-This provides a streamlined interface for managing repositories and branches so that your LX directories 
-will never be out of sync with each other across the development project.
+This provides a streamlined interface for managing repositories and branches so that your LX directories will never be out of sync with each other across the development project.
 
+## LX publishing requirements
 
-## What do I need to know ahead of time?
-
-Some information will be required to publish your LX:
+The following information is needed to publish an LX: 
 
 ```{list-table} LX publishing requirements
 :header-rows: 1
@@ -54,7 +57,7 @@ Each of the three LX directories (`lx`, `recipe`, `solution`), should be publish
   complicating the `dts code` learner workflow.
 ```
 
-The information you enter will autonmatically save, so that you can conveniently publish frequently. You may update 
+The information you enter will automatically save, so that you can conveniently publish frequently. You may update 
 these values during any future publish as the form will appear every time.
 
 ```{figure} ../../_images/create/publish-default.png
@@ -63,7 +66,7 @@ these values during any future publish as the form will appear every time.
 The default values will be saved for convenient iterative publishing.
 ```
 
-The version description you provide will be used as the commit message when pushing to the respositories.
+The version description you provide will be used as the commit message when pushing to the repositories.
 
 ```{figure} ../../_images/create/publish-version.png
 :name: publish-version

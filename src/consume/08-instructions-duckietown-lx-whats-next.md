@@ -1,7 +1,15 @@
+```{seo}
+:description: Discover additional Duckietown Learning Experiences and find helpful development resources including workflow guides and community support.
+:keywords: Duckietown, learning experiences, LX, robotics learning, dts code, workflow, help, community
+```
+
+(lx-resources)=
 # Step 3: What's Next?
 
 We have seen how a few Duckietown shell commands is all we need to learn and develop robotic 
 systems that will perform in the simulator or on a real world robot.
+
+(lx-resources-next-steps-find-more-duckietown-learning-experiences)=
 
 ## Find more Duckietown Learning Experiences
 
@@ -11,6 +19,8 @@ You can find example LX packages to walk through in the [Duckietown Learning Exp
 Link Duckietown LX library page when created
 ```
 
+(lx-resources-next-steps-worried-about-forgetting-the-workflow)=
+
 ## Worried about forgetting the workflow?
 
 Here are a few resources 
@@ -19,17 +29,21 @@ Here are a few resources
 2. Run `dts code` in the terminal to display the list of available workflow commands.
    You can also use the help flag `-h` after any command to get more details and a list of available options;
 3. Download the Duckietown `dts code` workflow cheatsheet here to hang up around your workspace: [`dts code` 
-   Workflow Cheatsheet](https://drive.google.com/file/d/1EWY4O6bjpesD68EdFjFEUJe9HglHqyW8/view?usp=sharing);
+   Workflow Cheatsheet](https://hubs.ly/Q03fwZvm0);
 
 (how-to-get-help)=
+(lx-resources-next-steps-how-to-get-help)=
+
 ## How to get help
 
-If you run into any issues that can't be solved using the troubleshooting sections in this development manual, 
+If you run into any issues that cannot be solved using the troubleshooting sections in this development manual, 
 you can join the 
-[Duckietown community on Slack](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team and find other developers using 
 Duckietown for a wide variety of projects and learning experiences.
 
+
+(lx-resources-next-steps-create-your-own-lx)=
 
 ## Create your own LX
 

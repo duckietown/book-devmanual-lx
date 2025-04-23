@@ -1,3 +1,4 @@
+(dts-code-editor)=
 # `dts code editor`
 
 ## What does it do?
