@@ -75,8 +75,6 @@ We will be walking through the **hello-world** LX in the following pages.
 
 Fork and clone the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository to follow along and complete the tutorial activities. 
 
-This will give you access to the full library of Duckietown Learning Experiences.
-
 1) To store your code, while also keeping the ability to pull updates from our version of this repository, create your own fork. Start by pressing "Fork" in the top right corner of [the duckietown-lx repository page on GitHub](https://github.com/duckietown/duckietown-lx). 
    Your new repository fork will appear in your GitHub repository list as: 
 
@@ -85,7 +83,7 @@ This will give you access to the full library of Duckietown Learning Experiences
     Then clone your new repository, replacing your GitHub username in the command below:
     
 ```bash
-git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
+git clone -b ente git@github.com:<your_username>/lx-<LEARNING EXPERIENCE>
 ```
 
 2) Configure the Duckietown version of this repository as the upstream repository to synchronize with your fork. Navigate to the repository folder and then list the current remote repository for your fork:
@@ -97,7 +95,7 @@ git remote -v
     Specify a new remote upstream repository:
 
 ```bash
-git remote add upstream https://github.com/duckietown/duckietown-lx
+git remote add upstream https://github.com/duckietown/lx-<LEARNING EXPERIENCE>
 ```
 
     Confirm that the new upstream repository was added to the list:
@@ -109,7 +107,7 @@ git remote -v
     You can now push your work to your repository using the standard GitHub workflow, and the beginning of every learning experience will prompt you to pull from the upstream repository - updating your exercises to the latest Duckietown version:
 
 ```bash
-git pull upstream mooc2022
+git pull upstream ente
 ```
 
 You are now ready to move on to the next section and start your development journey with the `dts code` workflow.
