@@ -39,9 +39,9 @@ return to the [](env-setup) before continuing.
 
 ## How do I run it?
 
-First, navigate into the directory containing the **hello-world** learning experience (or the root directory of the LX you are working on completing).
+First, navigate into the directory containing the **Braitenberg** learning experience (or the root directory of the LX being completed).
 
-**`duckietown-lx/hello-world-lx`**
+**`lx-braitenberg`**
 
 ```{figure} ../_images/consume/lx-directory.png
 :name: lx_directory_1
@@ -49,7 +49,7 @@ First, navigate into the directory containing the **hello-world** learning exper
 :align: center
 :width: 90%
 
-List of LX directories with the hello-world-lx directory highlighted.
+List of LX directories with the lx-braitenberg directory highlighted.
 ```
 
 ```{important}
@@ -58,17 +58,27 @@ All `dts code` commands should be executed inside the root directory of the lear
 
 Then run
 
-    dts code build
+    dts code build -R [ROBOT_NAME]
 
-You will see the following message once your LX has built successfully,
+A message similar to the following will indicate the LX has built successfully,
 
 ```{figure} ../_images/consume/build-success.png
-:name: build_success_2
-:alt: Success message that indicates a successful Duckietown LX build
-:align: center
-:width: 90%
+INFO Project packaged successfully!
 
-Success message that indicates a successful LX build.
+
+==============================
+Docker Build Analyzer
+Version: 1.1.0
+==============================
+
+Final image name: docker.io/<namespace>/braitenberg:ente-amd64
+-------------------------
+Time: 29 seconds
+Documentation: Skipped
+====================================================================================
+
+IMPORTANT: Always ask yourself, can I do better than that?
+
 ```
 
 For more information about what is happening during your build process, you can run any `dts code` command in debug 
@@ -92,7 +102,7 @@ You need to be in the root directory of the LX in order to run the `dts code` co
 
 ## What's Next?
 
-Now that you've built the **hello-world** learning experience, continue on to the next page to 
+Now that the **Braitenberg** learning experience has been built, continue on to the next page to 
 open the editor and complete your first notebook activities.
 
 ## Extra Options
@@ -111,25 +121,38 @@ for more details on what happens in the background when you run the `dts code bu
 ### Command options
 
 ```bash
-usage: dts [-h] [-C WORKDIR] [-H MACHINE] [-u USERNAME] [--no-pull] [--no-cache] [--push] [--recipe RECIPE] [--registry REGISTRY] [-L LAUNCHER] [-b BASE_TAG] [-v] [--quiet]
+usage: main.py [-h] [-C WORKDIR] [-H MACHINE] [-R ROBOT] [--local]
+               [-u USERNAME] [--no-pull] [--no-cache] [--push]
+               [--recipe RECIPE] [--recipe-version RECIPE_VERSION]
+               [--registry REGISTRY] [-L LAUNCHER] [-b BASE_TAG] [-v]
+               [--quiet]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -C WORKDIR, --workdir WORKDIR
                         Directory containing the project to be built
   -H MACHINE, --machine MACHINE
-                        Docker socket or hostname to use
+                        Docker socket or robot name to build the agent on
+  -R ROBOT, --robot ROBOT
+                        Name of the robot we want to build the code on
+  --local               should we build the image on the local machine instead
+                        of the robot
   -u USERNAME, --username USERNAME
                         The docker registry username to use
   --no-pull             Skip updating the base image from the registry
   --no-cache            Ignore the Docker cache
   --push                Push the resulting Docker image to the registry
-  --recipe RECIPE       Path to use if specifying a custom recipe
+  --recipe RECIPE       Path to use if specifying a custom local recipe path
+  --recipe-version RECIPE_VERSION
+                        Branch to use if specifying a test branch of the
+                        recipes repository
   --registry REGISTRY   Docker registry to use
   -L LAUNCHER, --launcher LAUNCHER
-                        The launcher to use as entrypoint to the built container
+                        The launcher to use as entrypoint to the built
+                        container
   -b BASE_TAG, --base-tag BASE_TAG
-                        Docker tag for the base image. Use when the base image is also a development version
+                        Docker tag for the base image. Use when the base image
+                        is also a development version
   -v, --verbose         Be verbose
   --quiet               Be quiet
 ```
