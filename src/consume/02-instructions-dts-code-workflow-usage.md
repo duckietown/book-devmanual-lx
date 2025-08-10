@@ -1,6 +1,6 @@
 ```{seo}
 :description: Learn about the `dts code` workflow in Duckietown and how to use it to develop, test, and submit your Duckietown Learning Experiences (LX).
-:keywords: Duckietown, learning experience, LX, `dts code`, development workflow, Duckiebot, simulator, submit results, Docker, VSCode
+:keywords: Duckietown, learning experience, LX, `dts code`, development workflow, Duckiebot, simulator,submit results, Docker, VSCode
 ```
 
 
@@ -14,7 +14,7 @@ and run Duckietown Learning Experiences (LX). These tools can
 * Submit your results to Duckietown challenges
 * And much more
 
-We will gain familiarity with this workflow by walking through the **hello-world** learning experience from the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx) as an example. Instructions on how to fork and clone this repository are located in [](env-setup).
+We will gain familiarity with this workflow by walking through the Braitenberg experience from the [lx-braitenberg repository](https://github.com/duckietown/lx-braitenberg) as an example. Instructions on how to fork and clone this repository are located in [](env-setup).
 
 ## Getting started
 
@@ -23,7 +23,7 @@ the `dts code` workflow:
 
 ### ✅ Step 1
 
-Open a terminal and navigate to the `duckietown-lx/hello-world-lx` directory.
+Open a terminal and navigate to the `lx-braitenberg` directory.
 
 ### ✅ Step 2
 

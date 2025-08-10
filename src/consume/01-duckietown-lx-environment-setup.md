@@ -33,11 +33,6 @@ brew install nss
 ```
 ````
 
-````{tab-item} Windows
-No need to install dependencies if you are running Windows.
-````
-`````
-
 Then update the Duckietown shell and the shell commands:
 
 ```bash
@@ -51,7 +46,12 @@ After completing Duckietown development setup instructions, add your `docker.io`
 command:
 
 ```bash
-dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
+dts config docker credentials set --username <USERNAME> --password <PASSWORD>
+```
+
+You should see the
+```bash
+Docker access credentials stored!
 ```
 
 ```{note}
@@ -69,18 +69,18 @@ Set up a local SSL certificate needed to run the LX editor inside your browser:
 dts setup mkcert
 ```
 
-## 4 - The `hello-world` LX
+## 4 - The `Braitenberg` LX
 
-We will be walking through the **hello-world** LX in the following pages. 
+We will be walking through the **Braitenberg** LX in the following pages. 
 
-Fork and clone the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository to follow along and complete the tutorial activities. 
+Fork and clone the [`Braitenberg`](https://github.com/duckietown/lx-braitenberg) repository to follow along
 
-1) To store your code, while also keeping the ability to pull updates from our version of this repository, create your own fork. Start by pressing "Fork" in the top right corner of [the duckietown-lx repository page on GitHub](https://github.com/duckietown/duckietown-lx). 
+1) To store your code, while also keeping the ability to pull updates from our version of this repository, create your own fork. Start by pressing "Fork" in the top right corner of [the lx-braitenberg repository page on GitHub](https://github.com/duckietown/lx-braitenberg). 
    Your new repository fork will appear in your GitHub repository list as: 
 
-        <your_username>/duckietown-lx
+        <your_username>/lx-braitenberg
 
-    Then clone your new repository, replacing your GitHub username in the command below:
+    Then clone your new repository, replacing your GitHub username and learning experience as braitenberg or other learning experiences you would like to try in the command below:
     
 ```bash
 git clone -b ente git@github.com:<your_username>/lx-<LEARNING EXPERIENCE>
