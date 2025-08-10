@@ -13,7 +13,7 @@ systems that will perform in the simulator or on a real world robot.
 
 ## Find more Duckietown Learning Experiences
 
-You can find example LX packages to walk through in the [Duckietown Learning Experiences repository](https://github.com/duckietown/duckietown-lx).
+You can find example LX packages to walk through in the [Duckietown Learning Experiences repositories](https://github.com/orgs/duckietown/repositories?language=&q=visibility%3Apublic+archived%3Afalse+-lx+NOT+duckietown+NOT+recipe+NOT+book&sort=&type=all).
 
 ```{todo}
 Link Duckietown LX library page when created

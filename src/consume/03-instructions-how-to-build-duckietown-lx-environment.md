@@ -43,15 +43,6 @@ First, navigate into the directory containing the **Braitenberg** learning exper
 
 **`lx-braitenberg`**
 
-```{figure} ../_images/consume/lx-directory.png
-:name: lx_directory_1
-:alt: Duckietown LX directory 2022-2024
-:align: center
-:width: 90%
-
-List of LX directories with the lx-braitenberg directory highlighted.
-```
-
 ```{important}
 All `dts code` commands should be executed inside the root directory of the learning experience.
 ```
@@ -62,7 +53,7 @@ Then run
 
 A message similar to the following will indicate the LX has built successfully,
 
-```{figure} ../_images/consume/build-success.png
+```
 INFO Project packaged successfully!
 
 
