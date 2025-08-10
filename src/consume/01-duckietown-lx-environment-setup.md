@@ -32,6 +32,7 @@ Open a terminal and run the following command:
 brew install nss
 ```
 ````
+`````
 
 Then update the Duckietown shell and the shell commands:
 
@@ -54,7 +55,7 @@ Docker access credentials stored!
 ```
 
 ```{note}
-The `<USERNAME>` and `<PASSWORD>` correspond to [`DockerHub`] (hub.docker.io) credentials configured during Docker setup in the Duckiebot Operation Manual.
+The `<USERNAME>` and `<PASSWORD>` correspond to [DockerHub](https://hub.docker.com) credentials configured during Docker setup in the Duckiebot Operation Manual.
 ```
 
 ## 3 - SSL certificate
@@ -73,36 +74,45 @@ The following pages use the **Braitenberg** LX as a running example.
 
 Fork and clone the [`Braitenberg`](https://github.com/duckietown/lx-braitenberg) repository to follow along.
 
-1) To store changes while retaining the ability to pull updates from the canonical repository, create a personal fork. Press "Fork" in the top right corner of [the lx-braitenberg repository page on GitHub](https://github.com/duckietown/lx-braitenberg).
-   The new repository fork will appear in the GitHub repository list as:
+1. To store changes while retaining the ability to pull updates from the canonical repository, create a personal fork. Press "Fork" in the top right corner of the [lx-braitenberg](https://github.com/duckietown/lx-braitenberg) repository page on GitHub.
+   The new repository fork will appear in the GitHub repository list as: `<GITHUB_USERNAME>/lx-braitenberg`
 
-        <GITHUB_USERNAME>/lx-braitenberg
-
-    Then clone the forked repository. Replace `<GITHUB_USERNAME>` and `<LEARNING_EXPERIENCE>` (e.g., `braitenberg`) in the command below:
+Then clone the forked repository. Replace `<GITHUB_USERNAME>` and `<LEARNING_EXPERIENCE>` (e.g., `braitenberg`) in the command below:
     
 ```bash
 git clone -b ente git@github.com:<GITHUB_USERNAME>/lx-<LEARNING_EXPERIENCE>
 ```
 
-2) Configure the Duckietown version of this repository as the upstream repository to synchronize with the fork. Navigate to the repository folder and list current remotes:
+2. Configure the Duckietown version of this repository as the upstream repository to synchronize with the fork. Navigate to the repository folder and list current remotes:
 
 ```bash
 git remote -v
 ```
-
-    Specify a new remote upstream repository:
+Expected output:
+```bash
+upstream	https://github.com/duckietown/lx-braitenberg (fetch)
+upstream	https://github.com/duckietown/lx-braitenberg (push)
+```
+Specify a new remote upstream repository:
 
 ```bash
 git remote add upstream https://github.com/duckietown/lx-<LEARNING_EXPERIENCE>
 ```
 
-    Confirm that the new upstream repository was added to the list:
+3. Confirm that the new upstream repository was added to the list:
 
 ```bash
 git remote -v
 ```
+Expected output:
+```bash
+origin	https://github.com/duckietown/lx-braitenberg.git (fetch)
+origin	https://github.com/duckietown/lx-braitenberg.git (push)
+upstream	https://github.com/duckietown/lx-braitenberg (fetch)
+upstream	https://github.com/duckietown/lx-braitenberg (push)
+```
 
-    Work can now be pushed using the standard GitHub workflow. Each learning experience begins by prompting a pull from the upstream repository to update exercises to the latest Duckietown version:
+4. Work can now be pushed using the standard GitHub workflow. Each learning experience begins by prompting a pull from the upstream repository to update exercises to the latest Duckietown version:
 
 ```bash
 git pull upstream ente
