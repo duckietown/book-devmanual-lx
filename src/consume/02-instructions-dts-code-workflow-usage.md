@@ -48,12 +48,27 @@ Starts a browser-based development environment (VS Code) for the learning experi
 
 ### `dts code workbench`
 
-Runs the agent against a robot (real or virtual), with integrated visualization and debugging tools. Add `-m` or `--matrix` to launch the Duckiematrix simulator together with the agent.
+Runs the agent against a robot (real or virtual), with integrated visualization and debugging tools. Add `-m` or `--matrix` to launch the agent and attach to the matrix.
+
+```{important}
+Start the Duckiematrix before running `dts code workbench` with a virtual robot. See [`dts code start_matrix`](dts-code-start-matrix).
+```
 
 ```bash
 dts code workbench -R <ROBOT_NAME>
-# or, to also start the matrix:
+```
+
+If using a virtual robot within the duckiematrix
+```bash
 dts code workbench -m -R <VIRTUAL_ROBOT_NAME>
+```
+
+Expected output:
+```bash
+2025-08-10 15:26:07 dan-Nitro-AN715-51 dts[129448] INFO Running an image for amd64 on x86_64.
+2025-08-10 15:26:07 dan-Nitro-AN715-51 dts[129448] INFO Running an image for amd64 on x86_64. Multiarch not needed!
+2025-08-10 15:26:07 dan-Nitro-AN715-51 dts[129448] INFO Syncing code with <ROBOT_NAME>...
+duckie@<ROBOT_NAME>.local's password: 
 ```
 
 ```{note}
@@ -75,6 +90,7 @@ Update the URL to the challenges server once we move to `duckietown.com`.
 ```
 -->
 
+(dts-code-start-matrix)=
 ### `dts code start_matrix`
 
 Starts the Duckiematrix simulator.
