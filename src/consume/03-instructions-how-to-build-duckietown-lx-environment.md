@@ -67,9 +67,6 @@ Final image name: docker.io/<namespace>/braitenberg:ente-amd64
 Time: 29 seconds
 Documentation: Skipped
 ====================================================================================
-
-IMPORTANT: Always ask yourself, can I do better than that?
-
 ```
 
 For more information about what is happening during your build process, you can run any `dts code` command in debug 

@@ -108,10 +108,6 @@ Opens a noVNC session for the current LX, useful for sending commands and viewin
 dts code vnc -R <ROBOT_NAME>
 ```
 
-```{note}
-Evaluation and submission commands are not part of the `ente` profile at this time.
-```
-
 ````{tip}
 In addition to the `dts code` workflow, the complete set of Duckietown development tools is available for building and running projects within each learning experience.  
 

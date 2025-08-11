@@ -8,23 +8,21 @@
 
 ## What does it do?
 
-The `dts code editor` command provides a local code editor that you will use to work through learning 
-experience notebooks and develop agents to run on your Duckiebot - right in your browser.
+The `dts code editor` command provides a local code editor used to work through learning 
+experience notebooks and to develop agents that run on a Duckiebot, in the browser.
 
 ## How do I run it?
 
-Open the code editor by running the following command
+Open the code editor by running the following command:
 
 ```
 dts code editor
 ```
 
-Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
-of your browser to access the `VSCode` powered code editor. 
+Wait for a URL to appear on the terminal, then open it in a web browser to access the `VSCode`-powered code editor.
 
 ```{note}
-If your Operating System supports it, the page should be opened automatically for you in a new browser
-tab as soon as it is ready to be opened.
+On supported operating systems, the page opens automatically in a new browser tab as soon as it is ready.
 ```
 
 ```{figure} ../_images/consume/editor-url.png
@@ -36,7 +34,7 @@ tab as soon as it is ready to be opened.
 Url to access your VSCode editor in the browser.
 ```
 
-The first thing you will see is the README document, which should contain the learning objectives for the LX.
+The initial view displays the README document, which contains the learning objectives for the LX.
 
 ```{figure} ../_images/consume/code-editor.png
 :name: code_editor_2
@@ -47,33 +45,28 @@ The first thing you will see is the README document, which should contain the le
 The VSCode Learning Experience editor.
 ```
 
-Once you have read about the learning experience goals in the README document, you can open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience. 
+After reviewing the learning experience goals in the README document, open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience.
 
-```{figure} ../_images/intro/hello-world-notebook.png
-:name: hello_world_notebook_3
+
+Complete each notebook in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and explore editor features:
+
+```{figure} ../_images/consume/run-cell.png
+:name: run-cell
 :alt: Duckietown hello world learning experience
 :align: center
 :width: 90%
-
-The first Hello World notebook will guide you through editing and running the activity.
 ```
-
-Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
-
 * 01-Notebook-Activities
 * 02-Code-Activities
 
-Then return to this page and continue on to the `dts workbench` command.
+Then return to this page and continue to the `dts code workbench` command.
 
 ```{hint}
 
-Strengthen your test-driven development (TDD) habits by using the Testing interface in the `VSCode` 
-editor to run the provided unit tests for each function you complete in an LX. 
-This will confirm that your solution performs as expected before you run it in simulation or 
-on your Duckiebot. Note that the beaker symbol to open the Testing interface may not appear in the sidebar 
-until after you've opened one of the Python files in the `packages` directory.
+Use the Testing interface in `VSCode` to run the provided unit tests for each function completed in an LX. 
+This confirms expected behavior before running in simulation or on a Duckiebot. The beaker icon to open the Testing interface may not appear in the sidebar until after a Python file in the `packages` directory has been opened.
 
-``{figure} ../../_images/consume/test-interface.png
+``{figure} ../_images/consume/test-interface.png
 :name: test_interface_4
 :alt: Duckietown LX example test interface
 :align: center
@@ -99,7 +92,7 @@ You need to be in the root directory of the LX in order to run the `dts code` co
 
 ## What's Next?
 
-Once you've completed the first two notebooks in the **hello-world** learning experience, continue on to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
+After completing the first two notebooks in the **Braitenberg** learning experience, continue to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
 
 ## Extra Options
 
