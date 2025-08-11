@@ -6,7 +6,7 @@
 (dts-code-build)=
 # `dts code build`
 
-## What does it do?
+## Purpose
 
 The `dts code build` command builds the learning experience package into a Docker image that will be 
 used by each of the other commands in the workflow.
@@ -14,14 +14,13 @@ used by each of the other commands in the workflow.
 The first step to working through any learning experience is to build it.
 
 ```{hint}
-Strengthen your iterative development habits by beginning every work session with a fresh build of your LX. 
-This will help ensure that you do not continue development on top of any previous errors.
+Begin each work session with a fresh build of the LX to avoid continuing development over previous errors.
 ```
 
 ## Prerequisites
 
-Always make sure that your system is up-to-date before starting a new learning experience. 
-If you have not yet installed the Duckietown shell and configured your development environment, 
+Ensure the system is up-to-date before starting a new learning experience. 
+If the Duckietown shell has not been installed and the development environment configured, 
 return to the [](env-setup) before continuing.
 
 - Update the shell commands:
@@ -37,21 +36,19 @@ return to the [](env-setup) before continuing.
       dts duckiebot update [ROBOT_NAME]
 
 
-## How do I run it?
+## Run the learning experience
 
-First, navigate into the directory containing the **Braitenberg** learning experience (or the root directory of the LX being completed).
-
-**`lx-braitenberg`**
+Navigate to the root directory of the learning experience (e.g., `lx-ros-basics`).
 
 ```{important}
 All `dts code` commands should be executed inside the root directory of the learning experience.
 ```
 
-Then run
+Run the build:
 
     dts code build -R [ROBOT_NAME]
 
-A message similar to the following will indicate the LX has built successfully,
+Successful build output example:
 
 ```
 INFO Project packaged successfully!
@@ -69,8 +66,7 @@ Documentation: Skipped
 ====================================================================================
 ```
 
-For more information about what is happening during your build process, you can run any `dts code` command in debug 
-mode using the `--debug` flag.
+For additional logs, run with `--debug`:
 
     dts --debug code build
 
@@ -96,8 +92,7 @@ open the editor and complete your first notebook activities.
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code` workflow, do not worry about the following section just yet. 
-Continue on to the next page to open you first LX activity.
+First-time users may skip the following section and proceed to the next page to open the first LX activity.
 ```
 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
