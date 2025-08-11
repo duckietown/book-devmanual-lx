@@ -6,12 +6,12 @@
 (dts-code-editor)=
 # `dts code editor`
 
-## What does it do?
+## Purpose
 
 The `dts code editor` command provides a local code editor used to work through learning 
 experience notebooks and to develop agents that run on a Duckiebot, in the browser.
 
-## How do I run it?
+## Run the editor
 
 Open the code editor by running the following command:
 
@@ -27,29 +27,29 @@ On supported operating systems, the page opens automatically in a new browser ta
 
 ```{figure} ../_images/consume/editor-url.png
 :name: editor_url_1
-:alt: Url to access your VSCode editor in the browser.
+:alt: URL to access the VSCode editor in the browser.
 :align: center
 :width: 90%
 
-Url to access your VSCode editor in the browser.
+Access link for the VSCode editor in the browser.
 ```
 
 The initial view displays the README document, which contains the learning objectives for the LX.
 
 ```{figure} ../_images/consume/code-editor.png
 :name: code_editor_2
-:alt: The Duckietown VSCode Learning Experience editor.
+:alt: Duckietown VSCode Learning Experience editor.
 :align: center
 :width: 90%
 
-The VSCode Learning Experience editor.
+VSCode Learning Experience editor.
 ```
 
-After reviewing the learning experience goals in the README document, open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience.
+After reviewing the learning experience goals in the README, open the `notebooks` directory using the file navigator on the left. Notebook activities contain the primary guidance and content of a learning experience.
 
-To complete a cell modify the code inside when required and run the cell by pressing the arrow on the right hand side of the cell.
+When required, modify the code in a cell and run it using the Run Cell arrow on the left side of the cell.
 
-If there is no code to modify, simply just run the cell and observe the outcome.
+If no code changes are required, run the cell and observe the outcome.
 
 ```{figure} ../_images/consume/run-cell.png
 :name: run-cell
@@ -58,33 +58,32 @@ If there is no code to modify, simply just run the cell and observe the outcome.
 :width: 90%
 ```
 
-Complete each notebook in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and implement braitenberg controls:
+Complete notebooks in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and implement Braitenberg controls:
 
 * 01-Image-Manipulation
 * 02-Image-Filtering
 * 03-Braitenberg
 
-Then return to this page and continue to the `dts code workbench` command.
+Continue to the `dts code workbench` command.
 
 ```{hint}
 
-Use the Testing interface in `VSCode` to run the provided unit tests for each function completed in an LX. 
+Use the Testing interface in `VSCode` to run the provided unit tests for each function implemented in an LX. 
 This confirms expected behavior before running in simulation or on a Duckiebot. The beaker icon to open the Testing interface may not appear in the sidebar until after a Python file in the `packages` directory has been opened.
 
-``{figure} ../_images/consume/test-interface.png
+```{figure} ../_images/consume/test-interface.png
 :name: test_interface_4
 :alt: Duckietown LX example test interface
 :align: center
 :width: 90%
-``
+```
 
 ```
 
 
 ## Troubleshooting
 
-If you run into any issues using this command, you can search the troubleshooting symptoms below or 
-reference the [](how-to-get-help) section of this manual.
+If issues arise, consult the troubleshooting symptoms below or reference the [](how-to-get-help) section of this manual.
 
 ```{trouble}
 
@@ -92,14 +91,13 @@ reference the [](how-to-get-help) section of this manual.
      :  The metadata file '.dtproject' is missing.`
 
 ---
-You need to be in the root directory of the LX in order to run the `dts code` commands.
+Run within the root directory of the LX to execute `dts code` commands.
 ```
 
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code` workflow, do not worry about the following section just yet. 
-Continue on to the next page to run your first LX activity.
+First-time users may skip the following section and proceed to the next page to run the first LX activity.
 ```
 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
