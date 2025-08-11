@@ -58,11 +58,25 @@ If no code changes are required, run the cell and observe the outcome.
 :width: 90%
 ```
 
-Complete notebooks in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and implement Braitenberg controls:
+Complete notebooks in sequence.
 
-* 01-Image-Manipulation
-* 02-Image-Filtering
-* 03-Braitenberg
+```{note}
+A suitable starting learning experience is ROS Basics. Complete the following notebooks in the `lx-ros-basics/notebooks` directory:
+```
+
+* 01_navigating_file_system.ipynb
+* 02_catkin_workspaces.ipynb
+* 03_catkin_packages.ipynb
+* 04_ros_nodes.ipynb
+* 05_ros_topics.ipynb
+* 06_ros_messages.ipynb
+* 07_duckietown_ros.ipynb
+
+After completing the notebooks, finalize the experience by completing the TODO task in the joystick demo node under `packages/src/dt-joystick-demo`. Reference implementation file: [dt-joystick-demo-node.py](https://github.com/duckietown/lx-ros-basics/blob/ente/packages/src/dt-joystick-demo/src/dt-joystick-demo-node.py).
+
+```{important}
+Not all learning experiences follow the same format. Always follow the instructions provided within each notebook.
+```
 
 Continue to the `dts code workbench` command.
 
