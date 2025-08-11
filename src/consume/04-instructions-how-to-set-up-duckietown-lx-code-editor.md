@@ -47,17 +47,22 @@ The VSCode Learning Experience editor.
 
 After reviewing the learning experience goals in the README document, open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience.
 
+To complete a cell modify the code inside when required and run the cell by pressing the arrow on the right hand side of the cell.
 
-Complete each notebook in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and explore editor features:
+If there is no code to modify, simply just run the cell and observe the outcome.
 
 ```{figure} ../_images/consume/run-cell.png
 :name: run-cell
-:alt: Duckietown hello world learning experience
+:alt: Duckietown run cell
 :align: center
 :width: 90%
 ```
-* 01-Notebook-Activities
-* 02-Code-Activities
+
+Complete each notebook in sequence. For the **Braitenberg** LX, complete the following notebooks to create an image filter and implement braitenberg controls:
+
+* 01-Image-Manipulation
+* 02-Image-Filtering
+* 03-Braitenberg
 
 Then return to this page and continue to the `dts code workbench` command.
 
@@ -90,10 +95,6 @@ reference the [](how-to-get-help) section of this manual.
 You need to be in the root directory of the LX in order to run the `dts code` commands.
 ```
 
-## What's Next?
-
-After completing the first two notebooks in the **Braitenberg** learning experience, continue to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
-
 ## Extra Options
 
 ```{warning}
@@ -110,9 +111,12 @@ for more details on what happens in the background when you run the `dts code ed
 ### Command options
 
 ```
-usage: dts [-h] [-C WORKDIR] [-u USERNAME] [--distro DISTRO] [--bind BIND] [--no-build] [--build-only] [--recipe RECIPE] [--image IMAGE] [--plain] [--no-pull] [--keep] [--impersonate IMPERSONATE] [-v]
+usage: main.py [-h] [-C WORKDIR] [-u USERNAME] [--distro DISTRO] [--bind BIND]
+               [--no-build] [--build-only] [--recipe RECIPE]
+               [--recipe-version RECIPE_VERSION] [--image IMAGE] [--plain]
+               [--no-pull] [--keep] [--impersonate IMPERSONATE] [-v]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -C WORKDIR, --workdir WORKDIR
                         Directory containing the project to open the editor on
@@ -120,14 +124,23 @@ optional arguments:
                         The docker registry username to use
   --distro DISTRO       Custom distribution to use VSCode from
   --bind BIND           Address to bind to
-  --no-build            Whether to skip building VSCode for this project, reuse last build instead
-  --build-only          Whether to build VSCode for this project without running it
-  --recipe RECIPE       Path to a custom recipe to use
+  --no-build            Whether to skip building VSCode for this project,
+                        reuse last build instead
+  --build-only          Whether to build VSCode for this project without
+                        running it
+  --recipe RECIPE       Path to use if specifying a custom local recipe path
+  --recipe-version RECIPE_VERSION
+                        Branch to use if specifying a test branch of the
+                        recipes repository
   --image IMAGE         Docker image to use as editor (advanced use only)
-  --plain               Whether to skip building VSCode for this project, use plain VSCode instead
-  --no-pull             Whether to skip updating the base VSCode image from the registry
-  --keep                Whether to keep the VSCode once done (useful for debugging)
+  --plain               Whether to skip building VSCode for this project, use
+                        plain VSCode instead
+  --no-pull             Whether to skip updating the base VSCode image from
+                        the registry
+  --keep                Whether to keep the VSCode once done (useful for
+                        debugging)
   --impersonate IMPERSONATE
-                        Username or UID of the user to impersonate inside VSCode
+                        Username or UID of the user to impersonate inside
+                        VSCode
   -v, --verbose         Be verbose
 ```
