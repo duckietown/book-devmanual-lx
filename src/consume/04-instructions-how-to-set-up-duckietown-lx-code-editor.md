@@ -117,9 +117,6 @@ First-time users may skip the following section and proceed to the next page to 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
 over each command. This section documents each of the flags available to extend the `dts code editor` command.
 
-You can also explore the [Behind the Scenes - dts code editor](behind-the-scenes-code-editor) chapter 
-for more details on what happens in the background when you run the `dts code editor` command.
-
 ### Command options
 
 ```
