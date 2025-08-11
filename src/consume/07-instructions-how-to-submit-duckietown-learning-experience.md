@@ -5,7 +5,13 @@
 
 (dts-code-submit)=
 # `dts code submit`
+```{warning}
+This is under development for `ente` version.
 
+- The `dts code submit` command is not available in `ente`.
+- The instructions below are inaccurate and are subject to change.
+
+```
 ## What does it do?
 
 The `dts code submit` command is very similar to the `dts code evaluate` command, but instead of evaluating your agent's performance on your local machine, it uploads your agent to the [Duckietown Challenges Server](https://challenges.duckietown.org) for evaluation on the cloud.

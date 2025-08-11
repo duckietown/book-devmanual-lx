@@ -3,131 +3,123 @@
 :keywords: Duckietown, workbench, robotics simulation, tools, learning experience
 ```
 
-(dts-code-workbench)=
-# `dts code workbench`
+# DTS Code Workbench
 
-## What does it do?
+## Overview
 
-The `dts code workbench` command runs the workbench portion of a learning experience, 
-which provides a virtual desktop tool (the VNC) with three different purposes,
+The `dts code workbench` command provides a complete development environment for Duckietown robotics projects. It creates a virtual desktop (VNC) and runtime environment that allows you to:
 
-1. **VNC Visualization Tools**: In any LX notebook activity, you may be directed to use the `dts code workbench` 
-   command to open the VNC and run a visualization or calibration tool.  This provides a more advanced 
-   interface to complement the notebook experience;
-2. **Duckietown Simulator**: The simulator interface runs agents developed in the LX on a Duckiebot in a virtual 
-   world. Keep an eye out for any duckies that may be wandering around the simulated road;
-3. **Duckiebot Agent Interface**: The `dts code workbench` command is also your interface for running agents on your 
-   real world Duckiebot.
+- Run GUI tools for visualization and calibration
+- Deploy agents to both virtual (Duckiematrix) and physical Duckiebots
+- Test solutions locally or on remote robots
+- Access a browser-based graphical desktop for development
 
-The focus of the workbench is to provide a streamlined experience for testing and deploying the activities and 
-solutions that you develop while working through a learning experience.
+## Core Components
 
+### VNC Desktop
+A browser-accessible graphical desktop for running GUI tools like RViz and calibration utilities. This is for visualization only - code editing should be done with `dts code editor`.
 
-## How do I run it?
+### Workspace
+The project filesystem and runtime environment where your agent code executes. Can run using a built Docker image or mount local files with the `--local` flag.
 
-1. To run an activity visualization or calibration in the VNC, run
+### Duckiematrix Simulator
+Provides virtual robots for testing without physical hardware. Must be started before connecting agents.
 
-         dts code workbench --sim
+## Quick Start
 
-   and follow the instructions in the notebook to select the correct desktop icon and run the tool.
+### 1. Working with Physical Duckiebots
 
-2. To test in simulation, use the command
+**Basic workbench with visualization:**
+```bash
+dts code workbench -R [ROBOT_NAME]
+```
 
-       dts code workbench --sim
-   
-   There will be two URLs popping up to open in your browser: one is the direct view of the
-   simulated environment. The other is VNC and only useful for some exercises, follow the instructions
-   in the notebooks to see if you need to access VNC.
-   
-   This simulation test is just that, a test. Don't trust it fully. If you want a more accurate
-   metric of performance, use the `dts code evaluate` command described on the next page.
+**Run agent locally, connect to remote robot:**
+```bash
+dts code workbench -R [ROBOT_NAME] --local
+```
 
-3. You can test your agent on the robot using the command,
-   
-       dts code workbench --duckiebot [ROBOT_NAME]
-   
-   This is the modality "all software runs on the robot".
-   
-   You can also test using
-   
-       dts code workbench --duckiebot [ROBOT_NAME] --local 
-   
-   This is the modality "drivers running on the robot, agent running on the laptop."
+> **Note:** Default password for first-time Duckiebot connections is `quackquack`
 
-If you run into any issues using this command, you can search the troubleshooting symptoms below or reference the [](how-to-get-help) section of this manual.
+### 2. Using Virtual Robots (Simulator)
+
+**Start workbench with simulator:**
+```bash
+dts code workbench -m -R [VIRTUAL_ROBOT_NAME]
+```
+
+**Alternative - start simulator separately:**
+```bash
+dts code start_matrix
+dts code workbench -R [VIRTUAL_ROBOT_NAME]
+```
+
+> **Important:** When using virtual robots, ensure Duckiematrix is running first. The `-m` flag launches it automatically.
+
+### 3. Desktop-Only Mode
+
+**Open VNC desktop without starting agent:**
+```bash
+dts code vnc -R [ROBOT_NAME]
+```
+
+## Command Reference
+
+### `dts code workbench` Options
+
+| Flag | Description |
+|------|-------------|
+| `-R, --robot` | Robot name to connect to |
+| `-m, --matrix` | Also start Duckiematrix simulator |
+| `--local` | Run agent on local machine instead of robot |
+| `-C, --workdir` | Project directory to work on |
+| `-H, --machine` | Docker socket or robot name for agent execution |
+| `-u, --username` | Docker registry username |
+| `--recipe` | Custom local recipe path |
+| `--recipe-version` | Test branch of recipes repository |
+| `--keep` | Don't auto-remove containers (debugging) |
+| `-L, --launcher` | Custom launcher for agent container |
+| `-v, --verbose` | Enable verbose output |
+
+### `dts code vnc` Options
+
+| Flag | Description |
+|------|-------------|
+| `-R, --robot` | Robot name to connect to |
+| `-C, --workdir` | Project directory for desktop |
+| `--distro` | Custom VNC distribution |
+| `--no-build` | Skip building, reuse last build |
+| `--build-only` | Build VNC without running |
+| `--plain` | Use plain VNC instead of project-specific |
+| `--impersonate` | Username/UID to impersonate in VNC |
 
 ## Troubleshooting
 
-```{trouble}
+### Project Directory Error
+```
+The path does not appear to be a Duckietown project. The metadata file '.dtproject' is missing.
+```
+**Solution:** Navigate to the root directory of your Duckietown project before running `dts code` commands.
 
-`dts :  The path '/home/myuser/not_an_lx_directory' does not appear to be a Duckietown project. 
-     :  The metadata file '.dtproject' is missing.`
-
----
-You need to be in the root directory of the LX in order to run the `dts code` commands.
+### Docker Port Conflicts
+```
+HTTPError: 500 Server Error: Internal Server Error
+Port conflicts detected
+```
+**Solution:** Check running containers and stop unnecessary ones:
+```bash
+docker ps --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Ports}}"
 ```
 
-```{trouble}
- 
- These errors appear: `requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.43/containers/84ce.../start`
- 
- and it is complained that certain ports are in conflict and could not be used.
- 
- ---
- 
- Please check your running docker containers and ports with: `docker ps --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Ports}}"`
- And stop the ones unnecessary, that occupy the mentioned conflicted ports.
- ```
+## Workflow Tips
 
-## Extra Options
+1. **Start Order Matters:** For virtual robots, start Duckiematrix first or use the `-m` flag
+2. **Two URLs Generated:** When using virtual robots, you'll get simulator view and VNC desktop URLs
+3. **Use VNC Selectively:** Only open the VNC desktop when specifically requested by learning exercises
+4. **Local vs Remote:** Use `--local` flag to run agent on your machine while connecting to remote robot drivers
 
-```{warning}
-If this is your first time using the `dts code workflow`, do not worry about the following section just yet. Continue 
-on to the next page to evaluate the soliution to your first LX activity.
-```
+## Advanced Usage
 
-Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
-over each command.  This section documents each of the flags available to extend the `dts code workbench` command.
+For detailed information about what happens behind the scenes, refer to the "Behind the Scenes - dts code workbench" documentation section.
 
-You can also explore the [Behind the Scenes - dts code workbench](behind-the-scenes-code-workbench) chapter 
-for more details on what happens in the background when you run the `dts code workbench` command.
-
-### Command options
-
-```
-Usage:
-
-  $ dts code workbench --sim
-  $ dts code workbench --duckiebot [ROBOT_NAME]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -C WORKDIR, --workdir WORKDIR
-                        Directory containing the project to bring up
-  --duckiebot DUCKIEBOT, -b DUCKIEBOT
-                        Name of the Duckiebot on which to run the exercise
-  -s, --simulation, --sim, --simulator
-                        Should we run it in the simulator instead of the real robot?
-  --stop                Just stop all the containers
-  --local, -l           Should we run the agent locally (i.e. on this machine)? Important Note: this is not expected to work on MacOSX
-  --recipe RECIPE       Path to use if specifying a custom recipe
-  --pull                Should we pull all of the images
-  --no-cache            Ignore the Docker cache
-  --bind BIND           Address to bind to (VNC)
-  --logs LOGS           Use --logs NAME:LEVEL to set up levels. The container names and their defaults are [agent:Levels.LEVEL_DEBUG
-                        manager:Levels.LEVEL_NONE simulator:Levels.LEVEL_NONE bridge:Levels.LEVEL_NONE vnc:Levels.LEVEL_NONE]. The levels are
-                        none, debug, info, warning, error.
-  --log_dir LOG_DIR     Logging directory
-  -L LAUNCHER, --launcher LAUNCHER
-                        Launcher to invoke inside the exercise container (advanced users only)
-  --registry REGISTRY   Docker registry to use (advanced users only)
-  --interactive, -i     Will run the agent in interactive mode with the code mounted
-  --keep                Do not auto-remove containers once done. Produces garbage containers but it is very useful for debugging.
-  --sync                RSync code between this computer and the agent
-  --challenge CHALLENGE
-                        Run in the environment of this challenge.
-  --scenarios SCENARIOS
-                        Uses the scenarios in the given directory.
-  --step STEP           Run this step of the challenge
-  --nvidia              Use the NVIDIA runtime (experimental).
-```
+> **Warning:** First-time users should focus on the Quick Start section and can safely skip advanced options initially.
