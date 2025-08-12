@@ -18,6 +18,12 @@ The project filesystem and runtime environment where your agent code executes. C
 ### VNC Desktop
 Browser-accessible graphical desktop for running GUI tools (e.g., RViz, calibration utilities) connected to the LX runtime. Can be started with `dts code vnc`.
 
+```{figure} ../_images/consume/vnc.png
+:name: test_interface_4
+:alt: Duckietown vnc
+:align: center
+:width: 90%
+```
 
 ## Quick Start
 
