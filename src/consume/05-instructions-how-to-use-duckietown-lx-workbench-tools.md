@@ -3,33 +3,31 @@
 :keywords: Duckietown, workbench, robotics simulation, tools, learning experience
 ```
 
-# DTS Code Workbench
+(dts-code-workbench)=
+# `dts code workbench`
 
-## Overview
+## Purpose
 
-The `dts code workbench` command provides a complete development environment for Duckietown robotics projects. It creates a virtual desktop (VNC) and runtime environment that allows you to:
+The `dts code workbench` command orchestrates execution of a Learning Experience (LX) agent against a target robot (virtual or physical). It can optionally start Duckiematrix (virtual robots) and expose a VNC desktop so GUI tools can connect to the LX runtime.
 
-- Run GUI tools for visualization and calibration
-- Deploy agents to both virtual (Duckiematrix) and physical Duckiebots
-- Test solutions locally or on remote robots
-- Access a browser-based graphical desktop for development
+- Execute an agent built from the LX against virtual (Duckiematrix) or physical Duckiebots
+- Optionally launch Duckiematrix and expose a VNC desktop for GUI tools connected to the LX runtime
+- Run the agent using a built image or by mounting the local workspace (`--local`)
 
 ## Core Components
-
-### VNC Desktop
-A browser-accessible graphical desktop for running GUI tools like RViz and calibration utilities. This is for visualization only - code editing should be done with `dts code editor`.
 
 ### Workspace
 The project filesystem and runtime environment where your agent code executes. Can run using a built Docker image or mount local files with the `--local` flag.
 
-### Duckiematrix Simulator
-Provides virtual robots for testing without physical hardware. Must be started before connecting agents.
+### VNC Desktop
+Browser-accessible graphical desktop for running GUI tools (e.g., RViz, calibration utilities) connected to the LX runtime. Can be started with `dts code vnc`.
+
 
 ## Quick Start
 
 ### 1. Working with Physical Duckiebots
 
-**Basic workbench with visualization:**
+**Basic workbench:**
 ```bash
 dts code workbench -R [ROBOT_NAME]
 ```
@@ -39,19 +37,19 @@ dts code workbench -R [ROBOT_NAME]
 dts code workbench -R [ROBOT_NAME] --local
 ```
 
-> **Note:** Default password for first-time Duckiebot connections is `quackquack`
+> **Note:** Default password for Duckiebot connections is `quackquack`
+
 
 ### 2. Using Virtual Robots (Simulator)
 
 **Start workbench with simulator:**
-```bash
-dts code workbench -m -R [VIRTUAL_ROBOT_NAME]
-```
 
-**Alternative - start simulator separately:**
 ```bash
 dts code start_matrix
-dts code workbench -R [VIRTUAL_ROBOT_NAME]
+```
+
+```bash
+dts code workbench -m -R [VIRTUAL_ROBOT_NAME]
 ```
 
 > **Important:** When using virtual robots, ensure Duckiematrix is running first. The `-m` flag launches it automatically.
@@ -114,12 +112,11 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Ports}}"
 ## Workflow Tips
 
 1. **Start Order Matters:** For virtual robots, start Duckiematrix first or use the `-m` flag
-2. **Two URLs Generated:** When using virtual robots, you'll get simulator view and VNC desktop URLs
 3. **Use VNC Selectively:** Only open the VNC desktop when specifically requested by learning exercises
-4. **Local vs Remote:** Use `--local` flag to run agent on your machine while connecting to remote robot drivers
+4. **Local vs Remote:** Use `--local` to run the agent on the workstation while the robot handles only low-level drivers and actuation; heavy computation is offloaded to the workstation
 
-## Advanced Usage
+<!-- ## Advanced Usage
 
-For detailed information about what happens behind the scenes, refer to the "Behind the Scenes - dts code workbench" documentation section.
+For detailed information about what happens behind the scenes, refer to the "Behind the Scenes - dts code workbench" documentation section. -->
 
 > **Warning:** First-time users should focus on the Quick Start section and can safely skip advanced options initially.
