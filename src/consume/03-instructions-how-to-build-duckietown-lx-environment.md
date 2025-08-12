@@ -98,8 +98,8 @@ First-time users may skip the following section and proceed to the next page to 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
 over each command. This section documents each of the flags available to extend the `dts code build` command.
 
-You can also explore the [Behind the Scenes - dts code build](behind-the-scenes-code-build) chapter 
-for more details on what happens in the background when you run the `dts code build` command.
+<!-- You can also explore the [Behind the Scenes - dts code build](behind-the-scenes-code-build) chapter 
+for more details on what happens in the background when you run the `dts code build` command. -->
 
 ### Command options
 
