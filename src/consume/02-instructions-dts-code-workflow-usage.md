@@ -12,7 +12,7 @@ The `dts code` workflow is a set of Duckietown shell commands to edit, test, and
 * Build learnings into container images
 * Run robot behaviors in the simulator and on a Duckiebot
 
-This section demonstrates the workflow using the Braitenberg experience from the [lx-braitenberg](https://github.com/duckietown/lx-braitenberg) repository as an example. Instructions on how to fork and clone this repository are located in [](env-setup).
+This section demonstrates the workflow using the ros-basics experience from the [lx-ros-basics](https://github.com/duckietown/lx-ros-basics) repository as an example. Instructions on how to fork and clone this repository are located in [](env-setup).
 
 ## Getting started
 
@@ -20,7 +20,7 @@ Complete the following steps to begin working with the `dts code` workflow:
 
 ### ✅ Step 1
 
-Open a terminal and navigate to the `lx-braitenberg` directory.
+Open a terminal and navigate to the `lx-ros-basics` directory.
 
 ### ✅ Step 2
 

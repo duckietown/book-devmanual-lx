@@ -68,16 +68,16 @@ Set up a local SSL certificate needed to run the LX editor inside your browser:
 dts setup mkcert
 ```
 
-## 4 - The `Braitenberg` LX
+## 4 - The `ROS-Basics` LX
 
-The following pages use the **Braitenberg** LX as a running example.
+The following pages use the **ROS-Basics** LX as a running example.
 
-Fork and clone the [`Braitenberg`](https://github.com/duckietown/lx-braitenberg) repository to follow along.
+Fork and clone the [`ros-basics`](https://github.com/duckietown/lx-ros-basics) repository to follow along.
 
-1. To store changes while retaining the ability to pull updates from the canonical repository, create a personal fork. Press "Fork" in the top right corner of the [lx-braitenberg](https://github.com/duckietown/lx-braitenberg) repository page on GitHub.
-   The new repository fork will appear in the GitHub repository list as: `<GITHUB_USERNAME>/lx-braitenberg`
+1. To store changes while retaining the ability to pull updates from the canonical repository, create a personal fork. Press "Fork" in the top right corner of the [lx-ros-basics](https://github.com/duckietown/lx-ros-basics) repository page on GitHub.
+   The new repository fork will appear in the GitHub repository list as: `<GITHUB_USERNAME>/lx-ros-basics`
 
-Then clone the forked repository. Replace `<GITHUB_USERNAME>` and `<LEARNING_EXPERIENCE>` (e.g., `braitenberg`) in the command below:
+Then clone the forked repository. Replace `<GITHUB_USERNAME>` and `<LEARNING_EXPERIENCE>` (e.g., `ros-basics`) in the command below:
     
 ```bash
 git clone -b ente git@github.com:<GITHUB_USERNAME>/lx-<LEARNING_EXPERIENCE>
@@ -90,8 +90,8 @@ git remote -v
 ```
 Expected output:
 ```bash
-upstream	https://github.com/duckietown/lx-braitenberg (fetch)
-upstream	https://github.com/duckietown/lx-braitenberg (push)
+upstream	https://github.com/duckietown/lx-ros-basics (fetch)
+upstream	https://github.com/duckietown/lx-ros-basics (push)
 ```
 Specify a new remote upstream repository:
 
@@ -106,10 +106,10 @@ git remote -v
 ```
 Expected output:
 ```bash
-origin	https://github.com/duckietown/lx-braitenberg.git (fetch)
-origin	https://github.com/duckietown/lx-braitenberg.git (push)
-upstream	https://github.com/duckietown/lx-braitenberg (fetch)
-upstream	https://github.com/duckietown/lx-braitenberg (push)
+origin	https://github.com/duckietown/lx-ros-basics.git (fetch)
+origin	https://github.com/duckietown/lx-ros-basics.git (push)
+upstream	https://github.com/duckietown/lx-ros-basics (fetch)
+upstream	https://github.com/duckietown/lx-ros-basics (push)
 ```
 
 4. Work can now be pushed using the standard GitHub workflow. Each learning experience begins by prompting a pull from the upstream repository to update exercises to the latest Duckietown version:

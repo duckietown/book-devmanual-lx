@@ -59,7 +59,7 @@ Docker Build Analyzer
 Version: 1.1.0
 ==============================
 
-Final image name: docker.io/<namespace>/braitenberg:ente-amd64
+Final image name: docker.io/<namespace>/ros-basics:ente-amd64
 -------------------------
 Time: 29 seconds
 Documentation: Skipped
@@ -86,7 +86,7 @@ You need to be in the root directory of the LX in order to run the `dts code` co
 
 ## What's Next?
 
-Now that the **Braitenberg** learning experience has been built, continue on to the next page to 
+Now that the **ros-basics** learning experience has been built, continue on to the next page to 
 open the editor and complete your first notebook activities.
 
 ## Extra Options
