@@ -8,11 +8,7 @@
 
 ## Purpose
 
-The `dts code workbench` command orchestrates execution of a Learning Experience (LX) agent against a target robot (virtual or physical). It can optionally start Duckiematrix (virtual robots) and expose a VNC desktop so GUI tools can connect to the LX runtime.
-
-- Execute an agent built from the LX against virtual (Duckiematrix) or physical Duckiebots
-- Optionally launch Duckiematrix and expose a VNC desktop for GUI tools connected to the LX runtime
-- Run the agent using a built image or by mounting the local workspace (`--local`)
+The `dts code workbench` command orchestrates execution of a Learning Experience (LX) agent against a target robot (virtual or physical). Expose a VNC desktop so GUI tools can connect to the LX runtime.
 
 ## Core Components
 
