@@ -56,9 +56,9 @@ dts code workbench -m -R [VIRTUAL_ROBOT_NAME]
 
 > **Important:** When using virtual robots, ensure Duckiematrix is running first. The `-m` flag launches it automatically.
 
-### 3. Desktop-Only Mode
+### 3. VNC Desktop
 
-**Open VNC desktop without starting agent:**
+**Open VNC desktop:**
 ```bash
 dts code vnc -R [ROBOT_NAME]
 ```
