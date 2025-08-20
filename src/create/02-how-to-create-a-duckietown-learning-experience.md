@@ -9,6 +9,15 @@
 New learning experiences are developed within the [](sec:lx-development-workspace).
 This structure provides a working directory containing all three of the required directories: `lx`, `recipe`, and `solution`.
 
+```{warning}
+Status for `ente`: LX creation via `dts lx create` is not fully developed. As an alternative, consider forking the template repository and adapting it:
+
+- Repository: https://github.com/duckietown/template-lx
+- Branch: `ente`
+
+After forking, clone the repository and proceed with the standard build and run workflow (`dts code build`, `dts code editor`, `dts code workbench`).
+```
+
 
 ## Required preliminaries
 

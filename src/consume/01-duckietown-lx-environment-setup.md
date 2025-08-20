@@ -6,7 +6,7 @@
 (env-setup)=
 # Step 1: Environment Setup
 
-Before working through any Duckietown Learning Experience, set up your development environment.
+Before starting any Duckietown Learning Experience (LX), ensure the development environment is set up.
 
 ```{important}
 Complete the following setup steps carefully to prevent running into bugs later on.
@@ -14,7 +14,7 @@ Complete the following setup steps carefully to prevent running into bugs later 
 
 ## 1 - Requirements
 
-We assume in this manual that you have already set up your Duckietown development environment following the steps in the [Setup - Laptop](book-opmanual-duckiebot:laptop-setup) and [Setup - Account](book-opmanual-duckiebot:dt-account) sections of the Duckiebot Operation Manual.
+Assume the Duckietown development environment was set up following the [Setup - Laptop](book-opmanual-duckiebot:laptop-setup) and [Setup - Account](book-opmanual-duckiebot:dt-account) sections of the Duckiebot Operation Manual.
 
 Then, install the following dependency libraries:
 
@@ -32,10 +32,6 @@ Open a terminal and run the following command:
 brew install nss
 ```
 ````
-
-````{tab-item} Windows
-No need to install dependencies if you are running Windows.
-````
 `````
 
 Then update the Duckietown shell and the shell commands:
@@ -47,21 +43,24 @@ dts update
 
 ## 2 - Docker Configuration
 
-After completing Duckietown development setup instructions, add your `docker.io` credentials to the Duckietown shell by running the following 
-command:
+After completing Duckietown development setup instructions, add `docker.io` credentials to the Duckietown shell using the following command:
 
 ```bash
-dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
+dts config docker credentials set --username <USERNAME> --password <PASSWORD>
+```
+
+Expected confirmation:
+```bash
+Docker access credentials stored!
 ```
 
 ```{note}
-These are the `<USERNAME>` and `<PASSWORD>` that you use to log in to DockerHub (hub.docker.io) when 
-setting up Docker in the Duckiebot operation manual.
+The `<USERNAME>` and `<PASSWORD>` correspond to [DockerHub](https://hub.docker.com) credentials configured during Docker setup in the Duckiebot Operation Manual.
 ```
 
 ## 3 - SSL certificate
 
-We use SSL certificates and TLS encryption to guarantee the highest standard of safety and privacy.
+SSL certificates and TLS encryption are used to guarantee a high standard of safety and privacy.
 
 Set up a local SSL certificate needed to run the LX editor inside your browser:
 
@@ -69,47 +68,54 @@ Set up a local SSL certificate needed to run the LX editor inside your browser:
 dts setup mkcert
 ```
 
-## 4 - The `hello-world` LX
+## 4 - The `ROS-Basics` LX
 
-We will be walking through the **hello-world** LX in the following pages. 
+The following pages use the **ROS-Basics** LX as a running example.
 
-Fork and clone the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository to follow along and complete the tutorial activities. 
+Fork and clone the [`ros-basics`](https://github.com/duckietown/lx-ros-basics) repository to follow along.
 
-This will give you access to the full library of Duckietown Learning Experiences.
+1. To store changes while retaining the ability to pull updates from the canonical repository, create a personal fork. Press "Fork" in the top right corner of the [lx-ros-basics](https://github.com/duckietown/lx-ros-basics) repository page on GitHub.
+   The new repository fork will appear in the GitHub repository list as: `<GITHUB_USERNAME>/lx-ros-basics`
 
-1) To store your code, while also keeping the ability to pull updates from our version of this repository, create your own fork. Start by pressing "Fork" in the top right corner of [the duckietown-lx repository page on GitHub](https://github.com/duckietown/duckietown-lx). 
-   Your new repository fork will appear in your GitHub repository list as: 
-
-        <your_username>/duckietown-lx
-
-    Then clone your new repository, replacing your GitHub username in the command below:
+Then clone the forked repository. Replace `<GITHUB_USERNAME>` and `<LEARNING_EXPERIENCE>` (e.g., `ros-basics`) in the command below:
     
 ```bash
-git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
+git clone -b ente git@github.com:<GITHUB_USERNAME>/lx-<LEARNING_EXPERIENCE>
 ```
 
-2) Configure the Duckietown version of this repository as the upstream repository to synchronize with your fork. Navigate to the repository folder and then list the current remote repository for your fork:
+2. Configure the Duckietown version of this repository as the upstream repository to synchronize with the fork. Navigate to the repository folder and list current remotes:
 
 ```bash
 git remote -v
 ```
-
-    Specify a new remote upstream repository:
+Expected output:
+```bash
+upstream	https://github.com/duckietown/lx-ros-basics (fetch)
+upstream	https://github.com/duckietown/lx-ros-basics (push)
+```
+Specify a new remote upstream repository:
 
 ```bash
-git remote add upstream https://github.com/duckietown/duckietown-lx
+git remote add upstream https://github.com/duckietown/lx-<LEARNING_EXPERIENCE>
 ```
 
-    Confirm that the new upstream repository was added to the list:
+3. Confirm that the new upstream repository was added to the list:
 
 ```bash
 git remote -v
 ```
-
-    You can now push your work to your repository using the standard GitHub workflow, and the beginning of every learning experience will prompt you to pull from the upstream repository - updating your exercises to the latest Duckietown version:
-
+Expected output:
 ```bash
-git pull upstream mooc2022
+origin	https://github.com/duckietown/lx-ros-basics.git (fetch)
+origin	https://github.com/duckietown/lx-ros-basics.git (push)
+upstream	https://github.com/duckietown/lx-ros-basics (fetch)
+upstream	https://github.com/duckietown/lx-ros-basics (push)
 ```
 
-You are now ready to move on to the next section and start your development journey with the `dts code` workflow.
+4. Work can now be pushed using the standard GitHub workflow. Each learning experience begins by prompting a pull from the upstream repository to update exercises to the latest Duckietown version:
+
+```bash
+git pull upstream ente
+```
+
+Proceed to the next section to start development with the `dts code` workflow.

@@ -5,7 +5,14 @@
 
 (dts-code-evaluate)=
 # `dts code evaluate`
+```{warning}
+This is under development for `ente` version.
 
+- The `dts code evaluate` command is not available in `ente`.
+- The instructions below are inaccurate and are subject to change.
+
+Recommendation: use `dts code workbench` with Duckiematrix (virtual robot) or a physical Duckiebot to test and validate activities.
+```
 ## What does it do?
 
 The `dts code evaluate` command runs your code to implement a robot agent at the end of each LX and evaluates it 

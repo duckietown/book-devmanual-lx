@@ -6,87 +6,98 @@
 (dts-code-editor)=
 # `dts code editor`
 
-## What does it do?
+## Purpose
 
-The `dts code editor` command provides a local code editor that you will use to work through learning 
-experience notebooks and develop agents to run on your Duckiebot - right in your browser.
+The `dts code editor` command provides a local code editor used to work through learning 
+experience notebooks and to develop agents that run on a Duckiebot, in the browser.
 
-## How do I run it?
+## Run the editor
 
-Open the code editor by running the following command
+Open the code editor by running the following command:
 
 ```
 dts code editor
 ```
 
-Wait for a URL to appear on the terminal, then click on it or copy-paste it in the address bar
-of your browser to access the `VSCode` powered code editor. 
+Wait for a URL to appear on the terminal, then open it in a web browser to access the `VSCode`-powered code editor.
 
 ```{note}
-If your Operating System supports it, the page should be opened automatically for you in a new browser
-tab as soon as it is ready to be opened.
+On supported operating systems, the page opens automatically in a new browser tab as soon as it is ready.
 ```
 
 ```{figure} ../_images/consume/editor-url.png
 :name: editor_url_1
-:alt: Url to access your VSCode editor in the browser.
+:alt: URL to access the VSCode editor in the browser.
 :align: center
 :width: 90%
 
-Url to access your VSCode editor in the browser.
+Access link for the VSCode editor in the browser.
 ```
 
-The first thing you will see is the README document, which should contain the learning objectives for the LX.
+The initial view displays the README document, which contains the learning objectives for the LX.
 
 ```{figure} ../_images/consume/code-editor.png
 :name: code_editor_2
-:alt: The Duckietown VSCode Learning Experience editor.
+:alt: Duckietown VSCode Learning Experience editor.
 :align: center
 :width: 90%
 
-The VSCode Learning Experience editor.
+VSCode Learning Experience editor.
 ```
 
-Once you have read about the learning experience goals in the README document, you can open the `notebooks` directory using the file navigation on the left side of the editor. The activities in the `notebooks` directory contain the main guidance and content of a learning experience. 
+After reviewing the learning experience goals in the README, open the `notebooks` directory using the file navigator on the left. Notebook activities contain the primary guidance and content of a learning experience.
 
-```{figure} ../_images/intro/hello-world-notebook.png
-:name: hello_world_notebook_3
-:alt: Duckietown hello world learning experience
+When required, modify the code in a cell and run it using the Run Cell arrow on the left side of the cell.
+
+If no code changes are required, run the cell and observe the outcome.
+
+```{figure} ../_images/consume/run-cell.png
+:name: run-cell
+:alt: Duckietown run cell
 :align: center
 :width: 90%
-
-The first Hello World notebook will guide you through editing and running the activity.
 ```
 
-Follow the instructions to complete each notebook in sequence.  If you are working through the **hello-world** LX, complete the following notebooks to create an image filter and explore the editor features:
+Complete notebooks in sequence.
 
-* 01-Notebook-Activities
-* 02-Code-Activities
+```{note}
+A suitable starting learning experience is ROS Basics. Complete the following notebooks in the `lx-ros-basics/notebooks` directory:
+```
 
-Then return to this page and continue on to the `dts workbench` command.
+* 01_navigating_file_system.ipynb
+* 02_catkin_workspaces.ipynb
+* 03_catkin_packages.ipynb
+* 04_ros_nodes.ipynb
+* 05_ros_topics.ipynb
+* 06_ros_messages.ipynb
+* 07_duckietown_ros.ipynb
+
+After completing the notebooks, finalize the experience by completing the TODO task in the joystick demo node under `packages/src/dt-joystick-demo`. Reference implementation file: [dt-joystick-demo-node.py](https://github.com/duckietown/lx-ros-basics/blob/ente/packages/src/dt-joystick-demo/src/dt-joystick-demo-node.py).
+
+```{important}
+Not all learning experiences follow the same format. Always follow the instructions provided within each notebook.
+```
+
+Continue to the `dts code workbench` command.
 
 ```{hint}
 
-Strengthen your test-driven development (TDD) habits by using the Testing interface in the `VSCode` 
-editor to run the provided unit tests for each function you complete in an LX. 
-This will confirm that your solution performs as expected before you run it in simulation or 
-on your Duckiebot. Note that the beaker symbol to open the Testing interface may not appear in the sidebar 
-until after you've opened one of the Python files in the `packages` directory.
+Use the Testing interface in `VSCode` to run the provided unit tests for each function implemented in an LX. 
+This confirms expected behavior before running in simulation or on a Duckiebot. The beaker icon to open the Testing interface may not appear in the sidebar until after a Python file in the `packages` directory has been opened.
 
-``{figure} ../../_images/consume/test-interface.png
+```{figure} ../_images/consume/test-interface.png
 :name: test_interface_4
 :alt: Duckietown LX example test interface
 :align: center
 :width: 90%
-``
+```
 
 ```
 
 
 ## Troubleshooting
 
-If you run into any issues using this command, you can search the troubleshooting symptoms below or 
-reference the [](how-to-get-help) section of this manual.
+If issues arise, consult the troubleshooting symptoms below or reference the [](how-to-get-help) section of this manual.
 
 ```{trouble}
 
@@ -94,32 +105,27 @@ reference the [](how-to-get-help) section of this manual.
      :  The metadata file '.dtproject' is missing.`
 
 ---
-You need to be in the root directory of the LX in order to run the `dts code` commands.
+Run within the root directory of the LX to execute `dts code` commands.
 ```
-
-## What's Next?
-
-Once you've completed the first two notebooks in the **hello-world** learning experience, continue on to the next page to use the workbench tools and drive a Duckiebot in the Duckietown simulator.
 
 ## Extra Options
 
 ```{warning}
-If this is your first time using the `dts code` workflow, do not worry about the following section just yet. 
-Continue on to the next page to run your first LX activity.
+First-time users may skip the following section and proceed to the next page to run the first LX activity.
 ```
 
 Once you are comfortable with the `dts code` workflow, you may want to use some additional control provided 
 over each command. This section documents each of the flags available to extend the `dts code editor` command.
 
-You can also explore the [Behind the Scenes - dts code editor](behind-the-scenes-code-editor) chapter 
-for more details on what happens in the background when you run the `dts code editor` command.
-
 ### Command options
 
 ```
-usage: dts [-h] [-C WORKDIR] [-u USERNAME] [--distro DISTRO] [--bind BIND] [--no-build] [--build-only] [--recipe RECIPE] [--image IMAGE] [--plain] [--no-pull] [--keep] [--impersonate IMPERSONATE] [-v]
+usage: main.py [-h] [-C WORKDIR] [-u USERNAME] [--distro DISTRO] [--bind BIND]
+               [--no-build] [--build-only] [--recipe RECIPE]
+               [--recipe-version RECIPE_VERSION] [--image IMAGE] [--plain]
+               [--no-pull] [--keep] [--impersonate IMPERSONATE] [-v]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -C WORKDIR, --workdir WORKDIR
                         Directory containing the project to open the editor on
@@ -127,14 +133,23 @@ optional arguments:
                         The docker registry username to use
   --distro DISTRO       Custom distribution to use VSCode from
   --bind BIND           Address to bind to
-  --no-build            Whether to skip building VSCode for this project, reuse last build instead
-  --build-only          Whether to build VSCode for this project without running it
-  --recipe RECIPE       Path to a custom recipe to use
+  --no-build            Whether to skip building VSCode for this project,
+                        reuse last build instead
+  --build-only          Whether to build VSCode for this project without
+                        running it
+  --recipe RECIPE       Path to use if specifying a custom local recipe path
+  --recipe-version RECIPE_VERSION
+                        Branch to use if specifying a test branch of the
+                        recipes repository
   --image IMAGE         Docker image to use as editor (advanced use only)
-  --plain               Whether to skip building VSCode for this project, use plain VSCode instead
-  --no-pull             Whether to skip updating the base VSCode image from the registry
-  --keep                Whether to keep the VSCode once done (useful for debugging)
+  --plain               Whether to skip building VSCode for this project, use
+                        plain VSCode instead
+  --no-pull             Whether to skip updating the base VSCode image from
+                        the registry
+  --keep                Whether to keep the VSCode once done (useful for
+                        debugging)
   --impersonate IMPERSONATE
-                        Username or UID of the user to impersonate inside VSCode
+                        Username or UID of the user to impersonate inside
+                        VSCode
   -v, --verbose         Be verbose
 ```
